@@ -54,17 +54,39 @@ h1, h2, h3, h4, h5, h6 {
 /* Carousel Styles */
 .carousel-item {
     height: 500px;
+    transition: transform 0.6s ease-in-out;
 }
 
 .carousel-item img {
     object-fit: cover;
     height: 100%;
+    width: 100%;
 }
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 5px;
+}
+
+/* Smooth carousel transitions */
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+/* Prevent background flash during transition */
+.carousel {
+    background-color: #000;
 }
 
 /* Menu Banner Styles */
