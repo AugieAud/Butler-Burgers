@@ -4,9 +4,22 @@ document.addEventListener('DOMContentLoaded', function() {
     var carousel = document.querySelector('#carouselExampleIndicators');
     if (carousel) {
         var carouselInstance = new bootstrap.Carousel(carousel, {
-            interval: 5000, // Change slides every 5 seconds
+            interval: 8000, // Change slides every 8 seconds to match HTML attribute
             wrap: true,     // Continuously cycle through slides
             pause: 'hover'  // Pause on mouse hover
+        });
+        
+        // Fix for transition from last slide to first slide
+        carousel.addEventListener('slide.bs.carousel', function(e) {
+            const slides = carousel.querySelectorAll('.carousel-item');
+            const totalSlides = slides.length;
+            
+            // If transitioning from last slide to first slide
+            if (e.from === totalSlides - 1 && e.to === 0) {
+                // Ensure smooth slide transition
+                slides[e.from].style.transition = 'transform 1.5s ease-in-out';
+                slides[e.to].style.transition = 'transform 1.5s ease-in-out';
+            }
         });
     }
 

@@ -123,25 +123,28 @@ h6 {
   background-color: #000; /* Dark background to prevent flashing */
 }
 
-.carousel-fade .carousel-item {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Slide transition setup */
+.carousel-item {
+  transition: transform 1.5s ease-in-out;
+}
+
+/* Make sure images cover the area properly */
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 1;
+  object-position: center 15%;
 }
 
-.carousel-fade .carousel-item.active {
-  position: relative;
-  opacity: 1;
-  z-index: 2;
+/* Ensure smooth transitions between all slides */
+.carousel .carousel-item-next:not(.carousel-item-start),
+.carousel .active.carousel-item-end {
+  transform: translateX(100%);
 }
 
-/* Ensure first slide is visible immediately */
-.carousel-fade .carousel-item:first-child {
-  opacity: 1;
+.carousel .carousel-item-prev:not(.carousel-item-end),
+.carousel .active.carousel-item-start {
+  transform: translateX(-100%);
 }
 
 /* Prevent background flash during transition */
