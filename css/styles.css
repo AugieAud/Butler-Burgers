@@ -149,6 +149,14 @@ h6 {
 
 /* Prevent background flash during transition */
 
+/* Hero Section Styles */
+.hero-section img {
+  max-width: 120%;
+  margin-left: -10%;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* Menu Banner Styles */
 .menu-banner,
 .about-banner {
