@@ -1,397 +1,626 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Butler Burgers - Menu</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Butler Burgers Logo" height="50">
-                    Butler Burgers
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-primary order-btn" href="https://www.doordash.com" target="_blank">Order Now</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Butler Burgers Logo" height="50" />
+            Butler Burgers
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-primary order-btn"
+                  href="https://www.doordash.com"
+                  target="_blank"
+                  >Order Now</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Menu Banner -->
     <div class="menu-banner">
-        <img src="images/menu-banner.jpg" class="w-100" alt="Our Menu">
-        <div class="banner-overlay">
-            <h1 class="display-4 text-white">Our Menu</h1>
-        </div>
+      <img src="images/menu-banner.jpg" class="w-100" alt="Our Menu" />
+      <div class="banner-overlay">
+        <h1 class="display-4 text-white">Our Menu</h1>
+      </div>
     </div>
 
     <!-- Menu Content -->
     <main class="container my-5">
-        <!-- Burgers Section -->
-        <section id="burgers" class="menu-section">
-            <h2 class="text-center mb-5">Signature Burgers</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Dog sliders2.jpg" class="card-img-top" alt="Dog Sliders">
-                        <div class="card-body">
-                            <h5 class="card-title">Dog Sliders</h5>
-                            <p class="card-text">Three mini beef patties topped with cheddar cheese, pickles, and our special sauce on slider buns.</p>
-                            <p class="price">$14.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Miss Lady Jane2.jpg" class="card-img-top" alt="Miss Lady Jane">
-                        <div class="card-body">
-                            <h5 class="card-title">Miss Lady Jane</h5>
-                            <p class="card-text">Delicate beef patty with Swiss cheese, arugula, tomato, and truffle aioli on a brioche bun.</p>
-                            <p class="price">$15.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Mr Belvedere.jpeg" class="card-img-top" alt="Mr. Belvedere">
-                        <div class="card-body">
-                            <h5 class="card-title">Mr. Belvedere</h5>
-                            <p class="card-text">Premium beef patty with aged cheddar, caramelized onions, lettuce, and house-made steak sauce on a sesame seed bun.</p>
-                            <p class="price">$16.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Onion Smash burger2.jpg" class="card-img-top" alt="Onion Smash Burger">
-                        <div class="card-body">
-                            <h5 class="card-title">Onion Smash Burger</h5>
-                            <p class="card-text">Smashed beef patty with grilled onions, American cheese, pickles, and special sauce on a potato bun.</p>
-                            <p class="price">$13.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Prince Albert1.jpg" class="card-img-top" alt="Prince Albert">
-                        <div class="card-body">
-                            <h5 class="card-title">Prince Albert</h5>
-                            <p class="card-text">Beef patty with blue cheese, bacon jam, arugula, and balsamic glaze on a pretzel bun.</p>
-                            <p class="price">$17.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Riff Raff Melt.jpg" class="card-img-top" alt="Riff Raff Melt">
-                        <div class="card-body">
-                            <h5 class="card-title">Riff Raff Melt</h5>
-                            <p class="card-text">Beef patty with melted Swiss and American cheese, caramelized onions, and special sauce on grilled sourdough.</p>
-                            <p class="price">$14.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Riff Raff burger w pickle.jpg" class="card-img-top" alt="Riff Raff Burger">
-                        <div class="card-body">
-                            <h5 class="card-title">Riff Raff Burger</h5>
-                            <p class="card-text">Beef patty with American cheese, lettuce, tomato, onion, pickle, and special sauce on a brioche bun.</p>
-                            <p class="price">$13.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Sir Alfred1.jpg" class="card-img-top" alt="Sir Alfred">
-                        <div class="card-body">
-                            <h5 class="card-title">Sir Alfred</h5>
-                            <p class="card-text">Premium beef patty with English cheddar, crispy bacon, lettuce, tomato, and HP sauce on a brioche bun.</p>
-                            <p class="price">$16.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Southern Gent1.jpg" class="card-img-top" alt="Southern Gent">
-                        <div class="card-body">
-                            <h5 class="card-title">Southern Gent</h5>
-                            <p class="card-text">Beef patty with pimento cheese, fried green tomato, lettuce, and remoulade on a brioche bun.</p>
-                            <p class="price">$15.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/The El Mayordomo3.jpg" class="card-img-top" alt="The El Mayordomo">
-                        <div class="card-body">
-                            <h5 class="card-title">The El Mayordomo</h5>
-                            <p class="card-text">Spicy beef patty with pepper jack cheese, guacamole, jalapeños, and chipotle mayo on a brioche bun.</p>
-                            <p class="price">$16.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/The Rise & Shine1.jpg" class="card-img-top" alt="The Rise & Shine">
-                        <div class="card-body">
-                            <h5 class="card-title">The Rise & Shine</h5>
-                            <p class="card-text">Beef patty with American cheese, bacon, fried egg, and maple aioli on a brioche bun.</p>
-                            <p class="price">$15.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/The Top Hat2.jpg" class="card-img-top" alt="The Top Hat">
-                        <div class="card-body">
-                            <h5 class="card-title">The Top Hat</h5>
-                            <p class="card-text">Premium beef patty with foie gras, caramelized onions, arugula, and black truffle aioli on a brioche bun.</p>
-                            <p class="price">$19.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Tux & Tails4.jpg" class="card-img-top" alt="Tux & Tails">
-                        <div class="card-body">
-                            <h5 class="card-title">Tux & Tails</h5>
-                            <p class="card-text">Beef patty with lobster meat, garlic butter, arugula, and lemon aioli on a black brioche bun.</p>
-                            <p class="price">$24.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/burgers/Wadsworth.jpg" class="card-img-top" alt="Wadsworth">
-                        <div class="card-body">
-                            <h5 class="card-title">Wadsworth</h5>
-                            <p class="card-text">Classic beef patty with lettuce, tomato, onion, pickle, and Butler special sauce on a brioche bun.</p>
-                            <p class="price">$12.99</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Burgers Section -->
+      <section id="burgers" class="menu-section">
+        <h2 class="text-center mb-5">Signature Burgers</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Dog sliders2.jpg"
+                class="card-img-top"
+                alt="Dog Sliders"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dog Sliders</h5>
+                <p class="card-text">
+                  Three mini beef patties topped with cheddar cheese, pickles,
+                  and our special sauce on slider buns.
+                </p>
+                <p class="price">$14.99</p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Miss Lady Jane2.jpg"
+                class="card-img-top"
+                alt="Miss Lady Jane"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Miss Lady Jane</h5>
+                <p class="card-text">
+                  Delicate beef patty with Swiss cheese, arugula, tomato, and
+                  truffle aioli on a brioche bun.
+                </p>
+                <p class="price">$15.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Mr Belvedere.jpeg"
+                class="card-img-top"
+                alt="Mr. Belvedere"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mr. Belvedere</h5>
+                <p class="card-text">
+                  Premium beef patty with aged cheddar, caramelized onions,
+                  lettuce, and house-made steak sauce on a sesame seed bun.
+                </p>
+                <p class="price">$16.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Onion Smash burger2.jpg"
+                class="card-img-top"
+                alt="Onion Smash Burger"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Onion Smash Burger</h5>
+                <p class="card-text">
+                  Smashed beef patty with grilled onions, American cheese,
+                  pickles, and special sauce on a potato bun.
+                </p>
+                <p class="price">$13.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Prince Albert1.jpg"
+                class="card-img-top"
+                alt="Prince Albert"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Prince Albert</h5>
+                <p class="card-text">
+                  Beef patty with blue cheese, bacon jam, arugula, and balsamic
+                  glaze on a pretzel bun.
+                </p>
+                <p class="price">$17.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Riff Raff Melt.jpg"
+                class="card-img-top"
+                alt="Riff Raff Melt"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Riff Raff Melt</h5>
+                <p class="card-text">
+                  Beef patty with melted Swiss and American cheese, caramelized
+                  onions, and special sauce on grilled sourdough.
+                </p>
+                <p class="price">$14.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Riff Raff burger w pickle.jpg"
+                class="card-img-top"
+                alt="Riff Raff Burger"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Riff Raff Burger</h5>
+                <p class="card-text">
+                  Beef patty with American cheese, lettuce, tomato, onion,
+                  pickle, and special sauce on a brioche bun.
+                </p>
+                <p class="price">$13.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Sir Alfred1.jpg"
+                class="card-img-top"
+                alt="Sir Alfred"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sir Alfred</h5>
+                <p class="card-text">
+                  Premium beef patty with English cheddar, crispy bacon,
+                  lettuce, tomato, and HP sauce on a brioche bun.
+                </p>
+                <p class="price">$16.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Southern Gent1.jpg"
+                class="card-img-top"
+                alt="Southern Gent"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Southern Gent</h5>
+                <p class="card-text">
+                  Beef patty with pimento cheese, fried green tomato, lettuce,
+                  and remoulade on a brioche bun.
+                </p>
+                <p class="price">$15.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/The El Mayordomo3.jpg"
+                class="card-img-top"
+                alt="The El Mayordomo"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The El Mayordomo</h5>
+                <p class="card-text">
+                  Spicy beef patty with pepper jack cheese, guacamole,
+                  jalapeños, and chipotle mayo on a brioche bun.
+                </p>
+                <p class="price">$16.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/The Rise & Shine1.jpg"
+                class="card-img-top"
+                alt="The Rise & Shine"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Rise & Shine</h5>
+                <p class="card-text">
+                  Beef patty with American cheese, bacon, fried egg, and maple
+                  aioli on a brioche bun.
+                </p>
+                <p class="price">$15.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/The Top Hat2.jpg"
+                class="card-img-top"
+                alt="The Top Hat"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Top Hat</h5>
+                <p class="card-text">
+                  Premium beef patty with foie gras, caramelized onions,
+                  arugula, and black truffle aioli on a brioche bun.
+                </p>
+                <p class="price">$19.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Tux & Tails4.jpg"
+                class="card-img-top"
+                alt="Tux & Tails"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tux & Tails</h5>
+                <p class="card-text">
+                  Beef patty with lobster meat, garlic butter, arugula, and
+                  lemon aioli on a black brioche bun.
+                </p>
+                <p class="price">$24.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/burgers/Wadsworth.jpg"
+                class="card-img-top"
+                alt="Wadsworth"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wadsworth</h5>
+                <p class="card-text">
+                  Classic beef patty with lettuce, tomato, onion, pickle, and
+                  Butler special sauce on a brioche bun.
+                </p>
+                <p class="price">$12.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Drinks Section -->
-        <section id="drinks" class="menu-section mt-5">
-            <h2 class="text-center mb-5">Drinks</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Blended Frozen Mocha.jpg" class="card-img-top" alt="Blended Frozen Mocha">
-                        <div class="card-body">
-                            <h5 class="card-title">Blended Frozen Mocha</h5>
-                            <p class="card-text">Rich espresso blended with chocolate, milk, and ice, topped with whipped cream and chocolate drizzle.</p>
-                            <p class="price">$5.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Dr. Pepper.jpg" class="card-img-top" alt="Dr. Pepper">
-                        <div class="card-body">
-                            <h5 class="card-title">Dr. Pepper</h5>
-                            <p class="card-text">Classic Dr. Pepper soda served ice cold with optional cherry flavor.</p>
-                            <p class="price">$2.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Lavender Lemonade.jpg" class="card-img-top" alt="Lavender Lemonade">
-                        <div class="card-body">
-                            <h5 class="card-title">Lavender Lemonade</h5>
-                            <p class="card-text">Freshly squeezed lemonade infused with lavender syrup and garnished with a sprig of lavender.</p>
-                            <p class="price">$4.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Lemonade.jpg" class="card-img-top" alt="Classic Lemonade">
-                        <div class="card-body">
-                            <h5 class="card-title">Classic Lemonade</h5>
-                            <p class="card-text">Freshly squeezed lemonade made with real lemons, water, and a touch of sugar. Served over ice.</p>
-                            <p class="price">$3.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Mango Smoothie.jpg" class="card-img-top" alt="Mango Smoothie">
-                        <div class="card-body">
-                            <h5 class="card-title">Mango Smoothie</h5>
-                            <p class="card-text">Tropical mango blended with yogurt and ice for a refreshing and fruity treat.</p>
-                            <p class="price">$5.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Oreo Milkshake1.jpg" class="card-img-top" alt="Oreo Milkshake">
-                        <div class="card-body">
-                            <h5 class="card-title">Oreo Milkshake</h5>
-                            <p class="card-text">Creamy vanilla ice cream blended with Oreo cookies and topped with whipped cream and cookie crumbles.</p>
-                            <p class="price">$6.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Pepsi.jpg" class="card-img-top" alt="Pepsi">
-                        <div class="card-body">
-                            <h5 class="card-title">Pepsi</h5>
-                            <p class="card-text">Classic Pepsi cola served ice cold with a lemon wedge upon request.</p>
-                            <p class="price">$2.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Raspberry Lemonade.jpg" class="card-img-top" alt="Raspberry Lemonade">
-                        <div class="card-body">
-                            <h5 class="card-title">Raspberry Lemonade</h5>
-                            <p class="card-text">Freshly squeezed lemonade infused with raspberry puree and garnished with fresh raspberries.</p>
-                            <p class="price">$4.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Root Beer.jpg" class="card-img-top" alt="Root Beer">
-                        <div class="card-body">
-                            <h5 class="card-title">Root Beer</h5>
-                            <p class="card-text">Classic root beer soda served ice cold. Add a scoop of vanilla ice cream for a root beer float.</p>
-                            <p class="price">$2.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Starry Soda.jpg" class="card-img-top" alt="Starry Soda">
-                        <div class="card-body">
-                            <h5 class="card-title">Starry Soda</h5>
-                            <p class="card-text">Crisp and refreshing lemon-lime soda served over ice with a slice of lemon.</p>
-                            <p class="price">$2.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <img src="images/drinks/Strawberry Smoothie.jpg" class="card-img-top" alt="Strawberry Smoothie">
-                        <div class="card-body">
-                            <h5 class="card-title">Strawberry Smoothie</h5>
-                            <p class="card-text">Fresh strawberries blended with yogurt and ice for a sweet and refreshing treat.</p>
-                            <p class="price">$5.99</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Drinks Section -->
+      <section id="drinks" class="menu-section mt-5">
+        <h2 class="text-center mb-5">Drinks</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Blended Frozen Mocha.jpg"
+                class="card-img-top"
+                alt="Blended Frozen Mocha"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blended Frozen Mocha</h5>
+                <p class="card-text">
+                  Rich espresso blended with chocolate, milk, and ice, topped
+                  with whipped cream and chocolate drizzle.
+                </p>
+                <p class="price">$5.99</p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Dr. Pepper.jpg"
+                class="card-img-top"
+                alt="Dr. Pepper"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dr. Pepper</h5>
+                <p class="card-text">
+                  Classic Dr. Pepper soda served ice cold with optional cherry
+                  flavor.
+                </p>
+                <p class="price">$2.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Lavender Lemonade.jpg"
+                class="card-img-top"
+                alt="Lavender Lemonade"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lavender Lemonade</h5>
+                <p class="card-text">
+                  Freshly squeezed lemonade infused with lavender syrup and
+                  garnished with a sprig of lavender.
+                </p>
+                <p class="price">$4.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Lemonade.jpg"
+                class="card-img-top"
+                alt="Classic Lemonade"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Classic Lemonade</h5>
+                <p class="card-text">
+                  Freshly squeezed lemonade made with real lemons, water, and a
+                  touch of sugar. Served over ice.
+                </p>
+                <p class="price">$3.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Mango Smoothie.jpg"
+                class="card-img-top"
+                alt="Mango Smoothie"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mango Smoothie</h5>
+                <p class="card-text">
+                  Tropical mango blended with yogurt and ice for a refreshing
+                  and fruity treat.
+                </p>
+                <p class="price">$5.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Oreo Milkshake1.jpg"
+                class="card-img-top"
+                alt="Oreo Milkshake"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Oreo Milkshake</h5>
+                <p class="card-text">
+                  Creamy vanilla ice cream blended with Oreo cookies and topped
+                  with whipped cream and cookie crumbles.
+                </p>
+                <p class="price">$6.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Pepsi.jpg"
+                class="card-img-top"
+                alt="Pepsi"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pepsi</h5>
+                <p class="card-text">
+                  Classic Pepsi cola served ice cold with a lemon wedge upon
+                  request.
+                </p>
+                <p class="price">$2.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Raspberry Lemonade.jpg"
+                class="card-img-top"
+                alt="Raspberry Lemonade"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Raspberry Lemonade</h5>
+                <p class="card-text">
+                  Freshly squeezed lemonade infused with raspberry puree and
+                  garnished with fresh raspberries.
+                </p>
+                <p class="price">$4.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Root Beer.jpg"
+                class="card-img-top"
+                alt="Root Beer"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Root Beer</h5>
+                <p class="card-text">
+                  Classic root beer soda served ice cold. Add a scoop of vanilla
+                  ice cream for a root beer float.
+                </p>
+                <p class="price">$2.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Starry Soda.jpg"
+                class="card-img-top"
+                alt="Starry Soda"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Starry Soda</h5>
+                <p class="card-text">
+                  Crisp and refreshing lemon-lime soda served over ice with a
+                  slice of lemon.
+                </p>
+                <p class="price">$2.99</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="images/drinks/Strawberry Smoothie.jpg"
+                class="card-img-top"
+                alt="Strawberry Smoothie"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Strawberry Smoothie</h5>
+                <p class="card-text">
+                  Fresh strawberries blended with yogurt and ice for a sweet and
+                  refreshing treat.
+                </p>
+                <p class="price">$5.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Sides Section -->
-        <section id="sides" class="menu-section mt-5">
-            <h2 class="text-center mb-5">Sides</h2>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="images/sides/Pasta Salad1.jpg" class="card-img-top" alt="Pasta Salad">
-                        <div class="card-body">
-                            <h5 class="card-title">Pasta Salad</h5>
-                            <p class="card-text">Rotini pasta tossed with cherry tomatoes, bell peppers, olives, and Italian dressing.</p>
-                            <p class="price">$4.99</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="images/sides/Potato salad1.jpg" class="card-img-top" alt="Potato Salad">
-                        <div class="card-body">
-                            <h5 class="card-title">Potato Salad</h5>
-                            <p class="card-text">Creamy potato salad with eggs, celery, onions, and our house-made dressing.</p>
-                            <p class="price">$4.99</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Sides Section -->
+      <section id="sides" class="menu-section mt-5">
+        <h2 class="text-center mb-5">Sides</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/sides/Pasta Salad1.jpg"
+                  class="card-img-top"
+                  alt="Pasta Salad"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Pasta Salad</h5>
+                <p class="card-text">
+                  Rotini pasta tossed with cherry tomatoes, bell peppers,
+                  olives, and Italian dressing.
+                </p>
+                <p class="price">$4.99</p>
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/sides/Potato salad1.jpg"
+                  class="card-img-top"
+                  alt="Potato Salad"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Potato Salad</h5>
+                <p class="card-text">
+                  Creamy potato salad with eggs, celery, onions, and our
+                  house-made dressing.
+                </p>
+                <p class="price">$4.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Desserts Section -->
-        <section id="desserts" class="menu-section mt-5">
-            <h2 class="text-center mb-5">Desserts</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
-                        <img src="images/desserts/Pecan Pie1.jpg" class="card-img-top" alt="Pecan Pie">
-                        <div class="card-body">
-                            <h5 class="card-title">Pecan Pie</h5>
-                            <p class="card-text">Southern-style pecan pie with a flaky crust, rich filling, and topped with a scoop of vanilla ice cream.</p>
-                            <p class="price">$7.99</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- Desserts Section -->
+      <section id="desserts" class="menu-section mt-5">
+        <h2 class="text-center mb-5">Desserts</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/desserts/Pecan Pie1.jpg"
+                  class="card-img-top"
+                  alt="Pecan Pie"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Pecan Pie</h5>
+                <p class="card-text">
+                  Southern-style pecan pie with a flaky crust, rich filling, and
+                  topped with a scoop of vanilla ice cream.
+                </p>
+                <p class="price">$7.99</p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Butler Burgers</h5>
-                    <p>123 Burger Street<br>Foodville, FD 12345</p>
-                    <p>Phone: (555) 123-4567</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Hours</h5>
-                    <p>Monday - Thursday: 11am - 9pm<br>
-                    Friday - Saturday: 11am - 10pm<br>
-                    Sunday: 12pm - 8pm</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Connect With Us</h5>
-                    <div class="social-icons">
-                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Butler Burgers</h5>
+            <p>123 Burger Street<br />Foodville, FD 12345</p>
+            <p>Phone: (555) 123-4567</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Hours</h5>
+            <p>
+              Monday - Thursday: 11am - 9pm<br />
+              Friday - Saturday: 11am - 10pm<br />
+              Sunday: 12pm - 8pm
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Connect With Us</h5>
+            <div class="social-icons">
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
             </div>
-            <div class="row mt-3">
-                <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2025 Butler Burgers. All rights reserved.</p>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <p class="mb-0">&copy; 2025 Butler Burgers. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
