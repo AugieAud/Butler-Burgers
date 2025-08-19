@@ -113,25 +113,25 @@ h6 {
 
 /* Individual Banner Styles */
 .banner-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/burgers/The Top Hat2.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banners2/mainburger.png');
   background-size: cover;
-  background-position: center 30%;
+  background-position: center;
 }
 
 .banner-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/drinks/Oreo Milkshake.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banners2/drinks.png');
   background-size: cover;
   background-position: center;
 }
 
 .banner-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/burgers/Sir Alfred1.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banners2/burgers.png');
   background-size: cover;
-  background-position: center 40%;
+  background-position: center;
 }
 
 .banner-4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/hero_burger.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banners2/pecanpie.png');
   background-size: cover;
   background-position: center;
 }
