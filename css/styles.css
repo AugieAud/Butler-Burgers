@@ -113,7 +113,8 @@ h6 {
 
 /* Individual Banner Styles */
 .banner-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banners2/mainburger.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/banners2/mainburger.png");
   background-size: cover;
   background-position: center;
 }
@@ -125,23 +126,51 @@ h6 {
   text-align: left;
 }
 
-.banner-2, .banner-3 {
+.banner-2,
+.banner-3 {
   position: relative;
 }
 
+.banner-2 .banner-content,
+.banner-3 .banner-content {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.banner-2 .banner-content h2,
+.banner-3 .banner-content h2 {
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.banner-2 .banner-content p,
+.banner-3 .banner-content p {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+}
+
 .banner-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banners2/drinks.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/banners2/drinks.png");
   background-size: cover;
   background-position: center;
 }
 
 .banner-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banners2/burgers.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/banners2/burgers.png");
   background-size: cover;
   background-position: center;
 }
 
-.banner-2 .btn, .banner-3 .btn {
+.banner-2 .btn,
+.banner-3 .btn {
   position: absolute;
   bottom: 30px;
   right: 30px;
@@ -149,7 +178,8 @@ h6 {
 }
 
 .banner-4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/banners2/pecanpie.png');
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/banners2/pecanpie.png");
   background-size: cover;
   background-position: center;
 }
