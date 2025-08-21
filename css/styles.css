@@ -47,7 +47,8 @@ h6 {
   padding: 0.5rem 1.5rem;
   background-color: var(--primary-color);
   border-color: var(--primary-color);
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .order-btn:hover {
@@ -85,7 +86,7 @@ h6 {
   max-width: 600px;
   width: 80%;
   z-index: 2;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 0.8);
 }
 
@@ -210,7 +211,8 @@ h6 {
   height: 100%;
   cursor: pointer;
   pointer-events: auto;
-  transition: backdrop-filter 0.3s ease;
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease,
+    opacity 0.3s ease, transform 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,6 +288,7 @@ h6 {
   background-color: transparent;
   transition: transform 0.8s ease-in-out;
   position: relative;
+  will-change: transform; /* GPU acceleration for smoother animation */
 }
 
 /* Horizontal sliding transitions */
@@ -317,8 +320,6 @@ h6 {
   width: 100%;
   object-position: center 15%;
 }
-
-/* Prevent background flash during transition */
 
 /* Hero Section Styles */
 .hero-section img {
@@ -459,7 +460,7 @@ h6 {
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
-  transition: 0.3s;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
 
