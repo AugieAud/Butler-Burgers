@@ -132,7 +132,6 @@ h6 {
   position: relative;
 }
 
-.banner-2 .banner-content,
 .banner-3 .banner-content {
   position: absolute;
   top: 10px;
@@ -142,6 +141,18 @@ h6 {
   padding: 0.5rem;
   width: 100%;
   max-width: 100%;
+}
+
+.banner-2 .banner-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0.5rem;
+  width: 50%;
+  max-width: 500px;
+  text-align: left;
 }
 
 .banner-2 .banner-content h2,
@@ -196,11 +207,14 @@ h6 {
 
 .carousel-nav-left,
 .carousel-nav-right {
-  width: 15%;
+  width: 5%;
   height: 100%;
   cursor: pointer;
   pointer-events: auto;
   transition: backdrop-filter 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-nav-left {
@@ -209,6 +223,38 @@ h6 {
 
 .carousel-nav-right {
   margin-left: auto;
+}
+
+.carousel-nav-left::before,
+.carousel-nav-right::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-nav-left::before {
+  transform: rotate(-45deg);
+  margin-left: 10px;
+}
+
+.carousel-nav-right::before {
+  transform: rotate(135deg);
+  margin-right: 10px;
+}
+
+.carousel-nav-left:hover::before,
+.carousel-nav-right:hover::before {
+  opacity: 1;
+  transform: scale(1.2) rotate(-45deg);
+}
+
+.carousel-nav-right:hover::before {
+  transform: scale(1.2) rotate(135deg);
 }
 
 .carousel-nav-left:hover,
