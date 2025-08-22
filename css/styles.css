@@ -687,12 +687,12 @@ footer {
   .hero-container {
     flex-direction: column;
   }
-  
+
   .hero-image-side,
   .hero-content-side {
     width: 100%;
   }
-  
+
   .hero-content-side {
     padding: 2rem 1rem;
   }
