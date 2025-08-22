@@ -9,17 +9,18 @@ document.addEventListener('DOMContentLoaded', function() {
             pause: 'hover'  // Pause on mouse hover
         });
         
-        // Fix for transition from last slide to first slide
+        // Apply consistent transition to all slides
         carousel.addEventListener('slide.bs.carousel', function(e) {
             const slides = carousel.querySelectorAll('.carousel-item');
-            const totalSlides = slides.length;
             
-            // If transitioning from last slide to first slide
-            if (e.from === totalSlides - 1 && e.to === 0) {
-                // Ensure smooth slide transition
-                slides[e.from].style.transition = 'transform 1.5s ease-in-out';
-                slides[e.to].style.transition = 'transform 1.5s ease-in-out';
-            }
+            // Apply the same transition to all slides for consistency
+            slides.forEach(slide => {
+                slide.style.transition = 'transform 0.8s ease-in-out';
+            });
+            
+            // Ensure the current and next slides have the same transition
+            slides[e.from].style.transition = 'transform 0.8s ease-in-out';
+            slides[e.to].style.transition = 'transform 0.8s ease-in-out';
         });
     }
 
