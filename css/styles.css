@@ -92,27 +92,31 @@ h6 {
   width: 80%;
   z-index: 2;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  text-shadow: 2px 2px 8px rgba(28, 28, 28, 1), 0px 0px 5px rgba(28, 28, 28, 0.8);
+  text-shadow: 2px 2px 8px rgba(28, 28, 28, 1),
+    0px 0px 5px rgba(28, 28, 28, 0.8);
 }
 
 .banner-content h2,
 .banner-content p,
 .banner-content .btn {
   color: var(--light-color);
-  text-shadow: 2px 2px 8px rgba(28, 28, 28, 0.8), 0px 0px 5px rgba(28, 28, 28, 0.7);
+  text-shadow: 2px 2px 8px rgba(28, 28, 28, 0.8),
+    0px 0px 5px rgba(28, 28, 28, 0.7);
 }
 
 .banner-content h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8), 0px 0px 4px rgba(28, 28, 28, 0.7);
+  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
+    0px 0px 4px rgba(28, 28, 28, 0.7);
 }
 
 .banner-content p {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8), 0px 0px 4px rgba(28, 28, 28, 0.7);
+  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
+    0px 0px 4px rgba(28, 28, 28, 0.7);
 }
 
 .banner-content .btn {
@@ -171,13 +175,15 @@ h6 {
 .banner-2 .banner-content h2,
 .banner-3 .banner-content h2 {
   font-size: 3.5rem;
-  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8), 0px 0px 4px rgba(28, 28, 28, 0.7);
+  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
+    0px 0px 4px rgba(28, 28, 28, 0.7);
 }
 
 .banner-2 .banner-content p,
 .banner-3 .banner-content p {
   font-size: 1.8rem;
-  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8), 0px 0px 4px rgba(28, 28, 28, 0.7);
+  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
+    0px 0px 4px rgba(28, 28, 28, 0.7);
 }
 
 .banner-2 {
@@ -273,7 +279,12 @@ h6 {
 .carousel-nav-left:hover,
 .carousel-nav-right:hover {
   backdrop-filter: blur(5px);
-  background-color: rgba(128, 0, 32, 0.2); /* Using primary color with transparency */
+  background-color: rgba(
+    128,
+    0,
+    32,
+    0.2
+  ); /* Using primary color with transparency */
 }
 
 .carousel-item img {
@@ -320,7 +331,12 @@ h6 {
 }
 
 .carousel-caption {
-  background-color: rgba(28, 28, 28, 0.5); /* Using secondary color with transparency */
+  background-color: rgba(
+    28,
+    28,
+    28,
+    0.5
+  ); /* Using secondary color with transparency */
   padding: 20px;
   border-radius: 5px;
 }
@@ -384,7 +400,12 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(28, 28, 28, 0.5); /* Using secondary color with transparency */
+  background-color: rgba(
+    28,
+    28,
+    28,
+    0.5
+  ); /* Using secondary color with transparency */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -448,7 +469,12 @@ h6 {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(28, 28, 28, 0.9); /* Using secondary color with transparency */
+  background-color: rgba(
+    28,
+    28,
+    28,
+    0.9
+  ); /* Using secondary color with transparency */
 }
 
 .modal-content {
@@ -611,26 +637,102 @@ footer {
 }
 
 /* Hero Section Styles */
-.hero-section,
+.hero-container {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image-side {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image-side img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.hero-content-side {
+  width: 60%;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Custom hero button */
+.hero-btn {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.hero-btn:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--dark-color);
+}
+
+/* Make hero section responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
+  
+  .hero-image-side,
+  .hero-content-side {
+    width: 100%;
+  }
+  
+  .hero-content-side {
+    padding: 2rem 1rem;
+  }
+}
+
 .featured-section {
   padding: 3rem 0;
 }
 
-/* Smaller image style for hero burger */
-.smaller-image {
-  max-width: 80%;
-  margin: 0 auto;
+/* Remove any potential Bootstrap container padding */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure no space between carousel and hero section */
+#carouselExampleIndicators {
+  margin-bottom: 0;
+}
+
+/* Additional hero section fixes */
+.hero-image-side {
+  position: relative;
+  left: 0;
+}
+
+.hero-text-col {
+  padding-left: 2rem;
+  width: 60%;
 }
 
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+  color: white;
 }
 
 .btn-primary:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  opacity: 0.85;
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--dark-color);
 }
 
 .btn-outline-primary {
