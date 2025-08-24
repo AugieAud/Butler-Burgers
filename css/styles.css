@@ -503,6 +503,31 @@ h6 {
   cursor: pointer;
 }
 
+/* Placeholder image styling */
+img[src="images/placeholder.png"] {
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+img[src="images/placeholder.png"]::after {
+  content: "Image Coming Soon";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* Add a wrapper for the image to maintain consistent sizing */
 .card-img-wrapper {
   height: 250px;
