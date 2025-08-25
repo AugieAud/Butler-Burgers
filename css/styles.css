@@ -7,6 +7,32 @@
   --dark-color: #1c1c1c; /* dark gray/black */
 }
 
+/* Ensure all elements use the correct font variables */
+* {
+  font-family: var(--body-font);
+}
+
+/* Force all headings to use Aurelig font with highest specificity */
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6, 
+.navbar-brand, 
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6,
+.card-title,
+.menu-section h2,
+section h2,
+.section-title,
+[class*="title"],
+[class*="heading"] {
+  font-family: "Aurelig", "Playfair Display", serif !important;
+}
+
+/* Specific rule for menu section headings and card titles */
+.menu-section h2, 
+.card-title {
+  font-family: "Aurelig", "Playfair Display", serif !important;
+  font-weight: 700;
+}
+
 /* Universal Button Styles - Override ALL buttons */
 .btn,
 button,
@@ -70,7 +96,6 @@ a[role="button"]:hover,
 }
 
 body {
-  font-family: var(--body-font);
   color: var(--secondary-color);
   line-height: 1.6;
   background-color: var(--light-color) !important;
@@ -82,7 +107,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
   font-weight: 700;
 }
 
@@ -93,7 +117,6 @@ h6 {
 }
 
 .navbar-brand {
-  font-family: var(--heading-font);
   font-weight: 700;
   font-size: 1.5rem;
   display: flex;
@@ -475,7 +498,6 @@ h6 {
 .banner-overlay h1.display-4,
 .menu-banner .banner-overlay h1,
 .about-banner .banner-overlay h1 {
-  font-family: var(--heading-font) !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: normal !important;
   letter-spacing: 1px;
