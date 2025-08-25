@@ -70,18 +70,12 @@ a[role="button"]:hover,
 }
 
 body {
-  font-family: var(--body-font) !important;
+  font-family: var(--body-font);
   color: var(--secondary-color);
   line-height: 1.6;
   background-color: var(--light-color) !important;
 }
 
-/* Ensure all text elements use the body font */
-p, span, div, a, li, ul, ol, button, input, textarea, table, td, th, label, .nav-link, .card-text, .card-title:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6), .btn, .navbar-nav, footer {
-  font-family: var(--body-font) !important;
-}
-
-/* Heading styles with increased sizes */
 h1,
 h2,
 h3,
@@ -90,31 +84,6 @@ h5,
 h6 {
   font-family: var(--heading-font);
   font-weight: 700;
-}
-
-/* Increase heading sizes */
-h1 {
-  font-size: 2.8rem;
-}
-
-h2 {
-  font-size: 2.4rem;
-}
-
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1.8rem;
-}
-
-h5 {
-  font-size: 1.5rem;
-}
-
-h6 {
-  font-size: 1.2rem;
 }
 
 /* Header Styles */
@@ -178,31 +147,23 @@ h6 {
 }
 
 .banner-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   padding: 2rem;
-  background-color: rgba(28, 28, 28, 0.6);
   border-radius: 8px;
   max-width: 600px;
   width: 80%;
   z-index: 2;
   transition: transform 0.3s ease, opacity 0.3s ease;
-  /* Text shadow only applies to text elements, not the container itself */
+  text-shadow: 2px 2px 8px rgba(28, 28, 28, 1),
+    0px 0px 5px rgba(28, 28, 28, 0.8);
 }
 
 .banner-content h2,
-.banner-content p {
+.banner-content p,
+.banner-content .btn {
   color: var(--light-color);
   text-shadow: 2px 2px 8px rgba(28, 28, 28, 0.8),
     0px 0px 5px rgba(28, 28, 28, 0.7);
-}
-
-.banner-content .btn {
-  color: var(--light-color);
-  text-shadow: none; /* Explicitly removing text shadow */
 }
 
 .banner-content h2 {
@@ -225,7 +186,6 @@ h6 {
   padding: 0.5rem 2rem;
   font-weight: 600;
   transition: transform 0.3s ease;
-  text-shadow: none; /* Explicitly removing text shadow */
 }
 
 .banner-content .btn:hover {
@@ -305,7 +265,6 @@ h6 {
   bottom: 30px;
   right: 30px;
   margin-top: 0;
-  text-shadow: none; /* Explicitly removing text shadow */
 }
 
 .banner-4 {
@@ -506,7 +465,6 @@ h6 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: normal !important;
   letter-spacing: 1px;
-  font-size: 3.5rem !important;
 }
 
 /* Accent color for first letter in banner titles */
@@ -884,15 +842,6 @@ body {
 .btn-sm {
   padding: 0.25rem 1rem;
   font-size: 0.9rem;
-}
-
-/* Ensure all banner buttons have no text shadow */
-.banner-content .btn,
-.banner-1 .btn,
-.banner-2 .btn,
-.banner-3 .btn,
-.banner-4 .btn {
-  text-shadow: none !important;
 }
 
 /* Button focus state */

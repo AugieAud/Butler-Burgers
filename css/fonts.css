@@ -1,21 +1,5 @@
 /* Custom Font Declarations */
 @font-face {
-  font-family: 'Aurelig';
-  src: url('../fonts/Aurelig Demo.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Lyzero';
-  src: url('../fonts/Lyzero DEMO.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: 'Kingred';
   src: url('../fonts/kingred.otf') format('opentype');
   font-weight: normal;
@@ -36,6 +20,6 @@
 
 /* Define font variables */
 :root {
-  --heading-font: 'Aurelig', 'Playfair Display', serif; /* Using Aurelig as primary font with fallbacks */
+  --heading-font: 'Kingred', 'Playfair Display', serif; /* Using Kingred as primary font with fallbacks */
   --body-font: 'Glacial Indifference', 'Montserrat', sans-serif; /* Using Glacial Indifference as primary font with fallbacks */
 }
