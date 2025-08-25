@@ -480,7 +480,12 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(28, 28, 28, 0.5); /* Using secondary color with transparency */
+  background-color: rgba(
+    28,
+    28,
+    28,
+    0.5
+  ); /* Using secondary color with transparency */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -762,14 +767,20 @@ footer {
 }
 
 .hero-image-side {
-  width: 40%;
+  width: 50%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image-side img {
   width: 100%;
-  height: auto;
+  height: 500px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio while covering container */
+  object-position: center; /* Center the image */
   display: block;
   margin: 0;
   padding: 0;
@@ -777,7 +788,7 @@ footer {
 }
 
 .hero-content-side {
-  width: 60%;
+  width: 50%;
   padding: 2rem 3rem;
   display: flex;
   flex-direction: column;
@@ -803,13 +814,74 @@ footer {
     width: 100%;
   }
 
+  .hero-image-side img {
+    height: 300px; /* Slightly smaller height on mobile */
+  }
+
   .hero-content-side {
     padding: 2rem 1rem;
+  }
+  
+  .featured-section {
+    height: 350px; /* Slightly smaller height on mobile */
+  }
+  
+  .featured-content h2 {
+    font-size: 2rem;
+  }
+  
+  .featured-content p {
+    font-size: 1.1rem;
   }
 }
 
 .featured-section {
-  padding: 3rem 0;
+  position: relative;
+  background: url("../images/banners2/pattern3.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.featured-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 28, 28, 0.6); /* Dark overlay for better text visibility */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-content {
+  text-align: center;
+  color: var(--light-color);
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.featured-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.featured-content p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.featured-content .btn {
+  font-size: 1.1rem;
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
 }
 
 /* Remove any potential Bootstrap container padding */
