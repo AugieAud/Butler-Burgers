@@ -467,6 +467,12 @@ h6 {
   letter-spacing: 1px;
 }
 
+/* Accent color for first letter in banner titles */
+.accent-first-letter {
+  color: var(--accent-color);
+  font-size: 1.2em;
+}
+
 /* Menu banner overlay with dark background */
 .menu-banner .banner-overlay {
   position: absolute;
