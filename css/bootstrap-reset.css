@@ -1,0 +1,110 @@
+/* Bootstrap Reset File
+ * This file contains all Bootstrap overrides to make styling easier
+ * Include this file AFTER bootstrap.min.css but BEFORE styles.css
+ */
+
+:root {
+  /* Override Bootstrap's variables with Butler Burgers color scheme */
+  --bs-primary: var(--accent-color);
+  --bs-secondary: var(--secondary-color);
+  --bs-dark: var(--dark-color);
+  --bs-light: var(--light-color);
+  
+  /* Button overrides */
+  --bs-btn-border-width: 0;
+  --bs-btn-border-radius: 0.5rem;
+  --bs-btn-padding-x: 1.5rem;
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-font-weight: 600;
+  
+  /* Navbar overrides */
+  --bs-navbar-padding-y: 1rem;
+  --bs-navbar-brand-font-size: 1.5rem;
+  
+  /* Card overrides */
+  --bs-card-border-width: 0;
+  --bs-card-border-radius: 0.5rem;
+  --bs-card-cap-bg: transparent;
+}
+
+/* Button Styles */
+.btn {
+  transition: all 0.3s ease;
+  text-shadow: none;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn-light {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* Navbar Styles */
+.navbar-dark {
+  background-color: var(--dark-color) !important;
+}
+
+.navbar-brand {
+  font-family: var(--heading-font);
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+/* Card Styles */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Carousel Overrides */
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+/* Grid Spacing */
+.row {
+  margin-bottom: 2rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--heading-font);
+}
+
+.display-4, .display-5 {
+  font-weight: 700;
+}
+
+/* Form Controls */
+.form-control {
+  border-radius: 0.5rem;
+  border: 1px solid #ced4da;
+}
+
+/* Footer */
+footer.bg-dark {
+  background-color: var(--dark-color) !important;
+}
