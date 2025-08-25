@@ -1,7 +1,7 @@
 /* Custom Font Declarations */
 @font-face {
-  font-family: 'Kingred';
-  src: url('../fonts/kingred.otf') format('opentype');
+  font-family: 'Aurelig';
+  src: url('../fonts/Aurelig Demo.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -17,9 +17,10 @@
 
 /* Import Google Fonts (as fallbacks) */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 /* Define font variables */
 :root {
-  --heading-font: 'Kingred', 'Playfair Display', serif; /* Using Kingred as primary font with fallbacks */
+  --heading-font: 'Aurelig', 'Playfair Display', serif; /* Using Aurelig as primary font for headings with fallbacks */
   --body-font: 'Glacial Indifference', 'Montserrat', sans-serif; /* Using Glacial Indifference as primary font with fallbacks */
 }

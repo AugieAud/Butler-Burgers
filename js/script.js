@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var carousel = document.querySelector('#carouselExampleIndicators');
     if (carousel) {
         var carouselInstance = new bootstrap.Carousel(carousel, {
-            interval: 8000, // Change slides every 8 seconds to match HTML attribute
+            interval: false, // Disable automatic transitions
             wrap: true,     // Continuously cycle through slides
-            pause: 'hover'  // Pause on mouse hover
+            keyboard: true  // Allow keyboard navigation
         });
         
         // Apply consistent transition to all slides
