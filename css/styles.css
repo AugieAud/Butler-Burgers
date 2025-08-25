@@ -73,7 +73,7 @@ body {
   font-family: var(--body-font);
   color: var(--secondary-color);
   line-height: 1.6;
-  background-color: var(--light-color);
+  background-color: var(--light-color) !important;
 }
 
 h1,
@@ -456,6 +456,30 @@ h6 {
   justify-content: center;
 }
 
+/* Banner title styling */
+.banner-overlay h1,
+.banner-overlay h1.display-4,
+.menu-banner .banner-overlay h1,
+.about-banner .banner-overlay h1 {
+  font-family: var(--heading-font) !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: normal !important;
+  letter-spacing: 1px;
+}
+
+/* Menu banner overlay with dark background */
+.menu-banner .banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 28, 28, 0.5); /* Using secondary color with transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-banner .banner-overlay {
   position: absolute;
   top: 0;
@@ -767,12 +791,12 @@ footer {
   .hero-container {
     flex-direction: column;
   }
-  
+
   .hero-image-side,
   .hero-content-side {
     width: 100%;
   }
-  
+
   .hero-content-side {
     padding: 2rem 1rem;
   }
