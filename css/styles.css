@@ -231,7 +231,7 @@ h6 {
 
 /* Individual Banner Styles */
 .banner-1 {
-  background: url("../images/banners2/BBtitleBanner.png");
+  background: url("../images/optimized/banners/BBtitleBanner.webp");
   background-size: cover;
   background-position: center;
 }
@@ -286,13 +286,13 @@ h6 {
 }
 
 .banner-2 {
-  background: url("../images/banners2/drink.png");
+  background: url("../images/optimized/banners/drink.webp");
   background-size: cover;
   background-position: center;
 }
 
 .banner-3 {
-  background: url("../images/banners2/burgers.png");
+  background: url("../images/optimized/banners/burgers.webp");
   background-size: cover;
   background-position: center;
 }
@@ -305,7 +305,7 @@ h6 {
 }
 
 .banner-4 {
-  background: url("../images/banners2/pecanpie.png");
+  background: url("../images/optimized/banners/pecanpie.webp");
   background-size: cover;
   background-position: center;
 }
@@ -460,7 +460,7 @@ h6 {
 .menu-banner {
   position: relative;
   height: 300px;
-  background: url("../images/banners2/pattern.png");
+  background: url("../images/optimized/banners/pattern2.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -469,7 +469,7 @@ h6 {
 .about-banner {
   position: relative;
   height: 300px;
-  background: url("../images/banners2/pattern2.png");
+  background: url("../images/optimized/banners/pattern2.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -873,7 +873,7 @@ footer {
 
 .featured-section {
   position: relative;
-  background: url("../images/banners2/pattern3.png?v=1");
+  background: url("../images/optimized/banners/pattern2.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
