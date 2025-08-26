@@ -8,6 +8,14 @@
 }
 
 @font-face {
+  font-family: "QuentinCaps";
+  src: url("../fonts/QuentinCaps.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Glacial Indifference";
   src: url("../fonts/glacial-indifference.regular.otf") format("opentype");
   font-weight: normal;
@@ -17,6 +25,6 @@
 
 /* Define font variables */
 :root {
-  --heading-font: "Aurelig", "Playfair Display", serif; /* Using Aurelig as primary font for headings with fallbacks */
+  --heading-font: "Glacial Indifference", "Montserrat", sans-serif; /* Using Glacial Indifference as primary font for headings with fallbacks */
   --body-font: "Glacial Indifference", "Montserrat", sans-serif; /* Using Glacial Indifference as primary font with fallbacks */
 }
