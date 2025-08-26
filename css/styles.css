@@ -460,7 +460,7 @@ h6 {
 .menu-banner {
   position: relative;
   height: 300px;
-  background: url("../images/optimized/banners/pattern2.webp");
+  background: url("../images/optimized/banners/pattern.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -873,7 +873,7 @@ footer {
 
 .featured-section {
   position: relative;
-  background: url("../images/optimized/banners/pattern2.webp");
+  background: url("../images/optimized/banners/pattern3.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
