@@ -720,6 +720,12 @@ img[src="images/placeholder.png"]::after {
   object-fit: cover;
 }
 
+/* Special Offer Cards - No Hover Effect */
+.special-offer.card:hover {
+  transform: none;
+  box-shadow: 0 4px 6px rgba(28, 28, 28, 0.1);
+}
+
 /* Footer Styles */
 footer {
   background-color: var(--secondary-color);
