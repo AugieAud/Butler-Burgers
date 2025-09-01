@@ -252,7 +252,7 @@ h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
 }
 
 /* Responsive styles for banner template */
@@ -260,11 +260,11 @@ h6 {
   .banner-template {
     height: 400px; /* Reduced height for medium screens */
   }
-  
+
   .banner-content-left h2 {
     font-size: 2.5rem;
   }
-  
+
   .banner-content-left p {
     font-size: 1.3rem;
   }
@@ -276,26 +276,26 @@ h6 {
     height: auto;
     min-height: 450px; /* Reduced from 600px */
   }
-  
+
   .banner-content-left,
   .banner-image-right {
     width: 100%;
   }
-  
+
   .banner-content-left {
     padding: 1.5rem;
     order: 2;
   }
-  
+
   .banner-image-right {
     height: 50%;
     order: 1;
   }
-  
+
   .banner-content-left h2 {
     font-size: 2rem;
   }
-  
+
   .banner-content-left p {
     font-size: 1.1rem;
   }
@@ -305,26 +305,26 @@ h6 {
   .banner-template {
     min-height: 350px; /* Further reduced height for mobile */
   }
-  
+
   .banner-content-left {
     padding: 1rem;
   }
-  
+
   .banner-content-left h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
-  
+
   .banner-content-left p {
     font-size: 0.9rem;
     margin-bottom: 0.8rem;
   }
-  
+
   .banner-content-left .btn {
     font-size: 0.9rem;
     padding: 0.3rem 1.2rem;
   }
-  
+
   .banner-image-right {
     height: 40%; /* Reduce image height on mobile */
   }
@@ -774,7 +774,7 @@ footer {
   .about-banner {
     height: 150px;
   }
-  
+
   .banner-overlay h1 {
     font-size: 2rem;
   }
@@ -784,7 +784,7 @@ footer {
   .banner-template {
     min-height: 500px;
   }
-  
+
   .banner-image-right {
     height: 250px;
   }
