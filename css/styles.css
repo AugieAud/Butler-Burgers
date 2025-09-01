@@ -249,7 +249,7 @@ h6 {
 
 /* Individual Banner Styles */
 .banner-1 {
-  background: url("../images/optimized/banners/1.webp");
+  background: url("../images/optimized/banners/BBtitleBanner.webp");
   background-size: cover;
   background-position: center;
 }
@@ -304,13 +304,13 @@ h6 {
 }
 
 .banner-2 {
-  background: url("../images/optimized/banners/2.webp");
+  background: url("../images/optimized/banners/drink.webp");
   background-size: cover;
   background-position: center;
 }
 
 .banner-3 {
-  background: url("../images/optimized/banners/3.webp");
+  background: url("../images/optimized/banners/burgers.webp");
   background-size: cover;
   background-position: center;
 }
@@ -323,7 +323,7 @@ h6 {
 }
 
 .banner-4 {
-  background: url("../images/optimized/banners/5.webp");
+  background: url("../images/optimized/banners/pecanpie.webp");
   background-size: cover;
   background-position: center;
 }
