@@ -38,7 +38,7 @@ section h2,
 .section-title,
 [class*="title"],
 [class*="heading"],
-.banner-content h2 {
+h2 {
   font-family: "Glacial Indifference", "Montserrat", sans-serif !important;
   font-weight: normal;
 }
@@ -186,146 +186,125 @@ h6 {
   position: relative;
 }
 
-/* Responsive Banner Styles */
-.responsive-banner {
-  height: 550px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
+/* Banner Template Styles */
+.banner-template {
+  background: url("../images/optimized/banners/bannerTemplate.webp");
   background-size: cover;
   background-position: center;
-  color: var(--light-color);
-  text-shadow: 1px 1px 3px rgba(28, 28, 28, 0.6);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 768px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
-.banner-content {
-  text-align: center;
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 600px;
-  width: 80%;
-  z-index: 2;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  text-shadow: 2px 2px 8px rgba(28, 28, 28, 1),
-    0px 0px 5px rgba(28, 28, 28, 0.8);
+.banner-content-left {
+  width: 50%;
+  padding: 2rem 3rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.banner-content h2,
-.banner-content p,
-.banner-content .btn {
-  color: var(--light-color);
-  text-shadow: 2px 2px 8px rgba(28, 28, 28, 0.8),
-    0px 0px 5px rgba(28, 28, 28, 0.7);
-}
-
-.banner-content h2 {
+.banner-content-left h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  font-weight: 700;
+  color: var(--light-color);
   text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
     0px 0px 4px rgba(28, 28, 28, 0.7);
 }
 
-.banner-content p {
+.banner-content-left p {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+  color: var(--light-color);
   text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
     0px 0px 4px rgba(28, 28, 28, 0.7);
 }
 
-.banner-content .btn {
+.banner-content-left .btn {
   font-size: 1.2rem;
   padding: 0.5rem 2rem;
   font-weight: 600;
   transition: transform 0.3s ease;
 }
 
-.banner-content .btn:hover {
+.banner-content-left .btn:hover {
   transform: scale(1.05);
 }
 
-/* Individual Banner Styles */
-.banner-1 {
-  background: url("../images/optimized/banners/BBtitleBanner.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.banner-1 .banner-content,
-.banner-4 .banner-content {
-  margin-right: auto;
-  margin-left: 10%;
-  text-align: left;
-}
-
-.banner-2,
-.banner-3 {
-  position: relative;
-}
-
-.banner-3 .banner-content {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  padding: 0.5rem;
-  width: 100%;
-  max-width: 100%;
-}
-
-.banner-2 .banner-content {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  transform: translateY(-50%);
-  margin: 0;
-  padding: 0.5rem;
+.banner-image-right {
   width: 50%;
-  max-width: 500px;
-  text-align: left;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.banner-2 .banner-content h2,
-.banner-3 .banner-content h2 {
-  font-size: 3.5rem;
-  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
-    0px 0px 4px rgba(28, 28, 28, 0.7);
+.banner-image-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.banner-2 .banner-content p,
-.banner-3 .banner-content p {
-  font-size: 1.8rem;
-  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
-    0px 0px 4px rgba(28, 28, 28, 0.7);
+/* Responsive styles for banner template */
+@media (max-width: 768px) {
+  .banner-template {
+    flex-direction: column;
+    height: auto;
+    min-height: 600px;
+  }
+  
+  .banner-content-left,
+  .banner-image-right {
+    width: 100%;
+  }
+  
+  .banner-content-left {
+    padding: 1.5rem;
+    order: 2;
+  }
+  
+  .banner-image-right {
+    height: 50%;
+    order: 1;
+  }
+  
+  .banner-content-left h2 {
+    font-size: 2rem;
+  }
+  
+  .banner-content-left p {
+    font-size: 1.1rem;
+  }
 }
 
-.banner-2 {
-  background: url("../images/optimized/banners/drink.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.banner-3 {
-  background: url("../images/optimized/banners/burgers.webp");
-  background-size: cover;
-  background-position: center;
-}
-
-.banner-3 .btn {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  margin-top: 0;
-}
-
-.banner-4 {
-  background: url("../images/optimized/banners/pecanpie.webp");
-  background-size: cover;
-  background-position: center;
+@media (max-width: 480px) {
+  .banner-content-left {
+    padding: 1rem;
+  }
+  
+  .banner-content-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .banner-content-left p {
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .banner-content-left .btn {
+    font-size: 0.9rem;
+    padding: 0.3rem 1.2rem;
+  }
 }
 
 /* Carousel navigation overlay */
@@ -424,7 +403,7 @@ h6 {
 
 /* Carousel item styles for horizontal sliding */
 .carousel-item {
-  height: 550px;
+  height: auto;
   background-color: transparent;
   transition: transform 0.8s ease-in-out !important;
   position: relative;
@@ -754,32 +733,8 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .carousel-item {
-    height: 300px;
-  }
 
-  .responsive-banner {
-    height: 300px;
-  }
 
-  .banner-content {
-    padding: 1.5rem;
-    width: 90%;
-  }
-
-  .banner-content h2 {
-    font-size: 2rem;
-  }
-
-  .banner-content p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-  }
-
-  .banner-content .btn {
-    font-size: 1rem;
-    padding: 0.4rem 1.5rem;
-  }
 
   .menu-banner,
   .about-banner {
@@ -793,28 +748,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .responsive-banner {
+  .banner-template {
+    min-height: 500px;
+  }
+  
+  .banner-image-right {
     height: 250px;
-  }
-
-  .banner-content {
-    padding: 1rem;
-    width: 95%;
-  }
-
-  .banner-content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .banner-content p {
-    font-size: 0.9rem;
-    margin-bottom: 0.8rem;
-  }
-
-  .banner-content .btn {
-    font-size: 0.9rem;
-    padding: 0.3rem 1.2rem;
   }
 }
 
