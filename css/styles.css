@@ -196,9 +196,10 @@ h6 {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  height: 768px;
+  height: 500px; /* Reduced from 768px */
   max-width: 1920px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .banner-content-left {
@@ -255,11 +256,25 @@ h6 {
 }
 
 /* Responsive styles for banner template */
+@media (max-width: 992px) {
+  .banner-template {
+    height: 400px; /* Reduced height for medium screens */
+  }
+  
+  .banner-content-left h2 {
+    font-size: 2.5rem;
+  }
+  
+  .banner-content-left p {
+    font-size: 1.3rem;
+  }
+}
+
 @media (max-width: 768px) {
   .banner-template {
     flex-direction: column;
     height: auto;
-    min-height: 600px;
+    min-height: 450px; /* Reduced from 600px */
   }
   
   .banner-content-left,
@@ -287,6 +302,10 @@ h6 {
 }
 
 @media (max-width: 480px) {
+  .banner-template {
+    min-height: 350px; /* Further reduced height for mobile */
+  }
+  
   .banner-content-left {
     padding: 1rem;
   }
@@ -304,6 +323,10 @@ h6 {
   .banner-content-left .btn {
     font-size: 0.9rem;
     padding: 0.3rem 1.2rem;
+  }
+  
+  .banner-image-right {
+    height: 40%; /* Reduce image height on mobile */
   }
 }
 
@@ -456,20 +479,22 @@ h6 {
 /* Menu Banner Styles */
 .menu-banner {
   position: relative;
-  height: 300px;
+  height: 250px;
   background: url("../images/optimized/banners/pattern.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  width: 100%;
 }
 
 .about-banner {
   position: relative;
-  height: 300px;
+  height: 250px;
   background: url("../images/optimized/banners/pattern2.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  width: 100%;
 }
 
 .menu-banner img,
@@ -733,17 +758,25 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-
-
-
   .menu-banner,
   .about-banner {
-    height: 200px;
+    height: 180px;
   }
 
   .order-btn {
     margin-left: 0;
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-banner,
+  .about-banner {
+    height: 150px;
+  }
+  
+  .banner-overlay h1 {
+    font-size: 2rem;
   }
 }
 
