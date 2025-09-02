@@ -76,7 +76,7 @@ a[role="button"],
 .btn-outline-danger,
 .btn-outline-light,
 .btn-outline-dark {
-  background-color: var(--accent-color) !important;
+  background-color: #ebbd98 !important;
   border: none !important;
   color: var(--dark-color) !important;
   transition: all 0.3s ease !important;
@@ -107,7 +107,7 @@ a[role="button"]:hover,
 .btn-outline-danger:hover,
 .btn-outline-light:hover,
 .btn-outline-dark:hover {
-  background-color: var(--light-color) !important;
+  background-color: #d9a883 !important;
   color: var(--dark-color) !important;
   border: none !important;
 }
