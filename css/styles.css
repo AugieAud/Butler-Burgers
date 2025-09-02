@@ -205,11 +205,11 @@ h6 {
 .banner-content-left {
   width: 50%;
   padding: 2rem 3rem;
-  text-align: left;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .banner-content-left h2 {
@@ -388,23 +388,13 @@ h6 {
 .carousel-nav-left:hover::before,
 .carousel-nav-right:hover::before {
   opacity: 1;
-  transform: scale(1.2) rotate(-45deg);
 }
 
 .carousel-nav-right:hover::before {
-  transform: scale(1.2) rotate(135deg);
+  transform: rotate(135deg);
 }
 
-.carousel-nav-left:hover,
-.carousel-nav-right:hover {
-  backdrop-filter: blur(5px);
-  background-color: rgba(
-    128,
-    0,
-    32,
-    0.2
-  ); /* Using primary color with transparency */
-}
+/* No background hover effect for carousel navigation */
 
 /* General carousel image styling */
 .carousel-item img {
@@ -959,17 +949,4 @@ input[type="reset"]:focus {
   height: 100% !important;
   object-fit: cover !important;
   object-position: center 50% !important; /* Exactly centered for equal cropping from top and bottom */
-}
-
-/* Specific adjustment for oreoHero image - using extreme object-position */
-.carousel-inner
-  .carousel-item:nth-child(2)
-  .banner-template
-  .banner-image-right
-  img[src="images/optimized/hero/oreoHero.jpg"] {
-  object-position: center 30% !important; /* Move this specific image down significantly */
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  transform: scale(1.1) !important; /* Slightly scale up to avoid empty space */
 }
