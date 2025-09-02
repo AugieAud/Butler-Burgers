@@ -849,6 +849,11 @@ footer {
   .hero-content-side {
     padding: 2rem 1rem;
   }
+  
+  /* Dog menu section specific styling */
+  .hero-container:nth-of-type(2) .hero-image-side {
+    order: -1; /* Make image appear first/above */
+  }
 
   .featured-section {
     height: 350px; /* Slightly smaller height on mobile */
