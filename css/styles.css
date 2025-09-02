@@ -252,7 +252,7 @@ h6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center bottom;
 }
 
 /* Responsive styles for banner template */
@@ -406,11 +406,12 @@ h6 {
   ); /* Using primary color with transparency */
 }
 
+/* General carousel image styling */
 .carousel-item img {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  object-position: center 15%; /* Adjust vertical position to show more of the top */
+  /* Removed specific positioning to avoid conflicts */
 }
 
 /* Carousel container styles */
@@ -460,13 +461,7 @@ h6 {
   border-radius: 5px;
 }
 
-/* Make sure images cover the area properly */
-.carousel-item img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  object-position: center 15%;
-}
+/* This duplicate style was removed to prevent conflicts */
 
 /* Hero Section Styles */
 .hero-section img {
@@ -956,4 +951,25 @@ input[type="submit"]:focus,
 input[type="reset"]:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 184, 77, 0.25) !important;
   outline: none !important;
+}
+
+/* Override for banner images - highest specificity */
+.carousel-inner .carousel-item .banner-template .banner-image-right img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 50% !important; /* Exactly centered for equal cropping from top and bottom */
+}
+
+/* Specific adjustment for oreoHero image - using extreme object-position */
+.carousel-inner
+  .carousel-item:nth-child(2)
+  .banner-template
+  .banner-image-right
+  img[src="images/optimized/hero/oreoHero.jpg"] {
+  object-position: center 30% !important; /* Move this specific image down significantly */
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transform: scale(1.1) !important; /* Slightly scale up to avoid empty space */
 }
