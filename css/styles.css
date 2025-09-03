@@ -854,6 +854,55 @@ footer {
   .hero-container:nth-of-type(2) .hero-image-side {
     order: -1; /* Make image appear first/above */
   }
+  
+  /* Fix for hamburger menu in mobile view */
+  .navbar-collapse {
+    transition: none; /* Remove any transitions that might cause issues */
+  }
+
+  #navbarNav.collapse:not(.show) {
+    display: none !important; /* Force hide when not shown */
+  }
+
+  #navbarNav.collapsing {
+    display: none !important; /* Hide during transition */
+  }
+
+  #navbarNav.collapse.show {
+    display: block !important; /* Force display when shown */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #212529; /* Match the navbar background */
+    z-index: 1000;
+    padding: 10px 0;
+    max-height: calc(100vh - 80px); /* Prevent overflow beyond viewport */
+    overflow-y: auto; /* Allow scrolling if menu is too tall */
+  }
+  
+  /* Ensure navbar items are fully visible */
+  .navbar-nav {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 8px 15px;
+    display: block;
+  }
+  
+  /* Fix container for mobile navbar */
+  @media (max-width: 991px) {
+    .navbar > .container {
+      position: relative;
+    }
+  }
 
   .featured-section {
     height: 350px; /* Slightly smaller height on mobile */

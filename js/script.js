@@ -1,5 +1,18 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // Auto-close navbar when a nav link is clicked
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const collapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            collapse.hide();
+        });
+    });
+
     // Initialize Bootstrap carousel with custom settings
     var carousel = document.querySelector('#carouselExampleIndicators');
     if (carousel) {
