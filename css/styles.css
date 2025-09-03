@@ -51,6 +51,25 @@ h2 {
   font-weight: normal;
 }
 
+.navbar-brand {
+  font-family: "Aurelig Demo", "Glacial Indifference", "Montserrat", sans-serif !important;
+  font-size: 1.8rem;
+  color: var(--light-color) !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo-main {
+  height: 30px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+
 /* Specific rule for menu section headings and card titles */
 .menu-section h2,
 .card-title {
