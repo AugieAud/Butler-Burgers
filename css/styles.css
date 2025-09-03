@@ -50,6 +50,22 @@ h2 {
   font-weight: 700;
 }
 
+body {
+  font-family: 'Glacial Indifference', sans-serif;
+  color: var(--secondary-color);
+  line-height: 1.6;
+  background-color: var(--light-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
 /* Universal Button Styles - Override ALL buttons */
 .btn,
 button,
@@ -405,6 +421,14 @@ h6 {
 }
 
 /* No background hover effect for carousel navigation */
+
+/* Hide carousel navigation arrows on mobile */
+@media (max-width: 767px) {
+  .carousel-nav-left,
+  .carousel-nav-right {
+    display: none !important;
+  }
+}
 
 /* General carousel image styling */
 .carousel-item img {
@@ -856,8 +880,19 @@ footer {
   }
   
   /* Fix for hamburger menu in mobile view */
+  .navbar {
+    position: relative;
+    padding-bottom: 0; /* Remove bottom padding from navbar */
+  }
+  
+  /* Ensure the navbar has a solid background */
+  .navbar.navbar-dark.bg-dark {
+    background-color: #212529 !important;
+  }
+  
   .navbar-collapse {
     transition: none; /* Remove any transitions that might cause issues */
+    background-color: #212529; /* Match the navbar background */
   }
 
   #navbarNav.collapse:not(.show) {
@@ -868,6 +903,7 @@ footer {
     display: none !important; /* Hide during transition */
   }
 
+  /* Ensure the dropdown menu connects seamlessly with navbar */
   #navbarNav.collapse.show {
     display: block !important; /* Force display when shown */
     position: absolute;
@@ -880,6 +916,21 @@ footer {
     padding: 10px 0;
     max-height: calc(100vh - 80px); /* Prevent overflow beyond viewport */
     overflow-y: auto; /* Allow scrolling if menu is too tall */
+    margin-top: -2px; /* Create overlap to prevent gap */
+    border-top: none; /* Remove any border that might create a gap */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for visual separation */
+  }
+  
+  /* Remove any margin from the first item in dropdown */
+  #navbarNav .navbar-nav > .nav-item:first-child {
+    margin-top: 0;
+  }
+  
+  /* Fix for navbar container positioning */
+  @media (max-width: 991px) {
+    .navbar > .container {
+      position: static;
+    }
   }
   
   /* Ensure navbar items are fully visible */
