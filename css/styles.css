@@ -31,7 +31,15 @@ h6,
 .display-3,
 .display-4,
 .display-5,
-.display-6,
+.display-6 {
+  font-weight: 400;
+  color: #ac663e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .card-title,
 .menu-section h2,
 section h2,
@@ -51,7 +59,7 @@ h2 {
 }
 
 body {
-  font-family: 'Glacial Indifference', sans-serif;
+  font-family: "Glacial Indifference", sans-serif;
   color: var(--secondary-color);
   line-height: 1.6;
   background-color: var(--light-color) !important;
@@ -239,11 +247,14 @@ h6 {
 }
 
 .banner-content-left h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 400;
   margin-bottom: 1rem;
-  color: #ac663e; /* Updated banner heading color */
-  text-shadow: 2px 2px 6px rgba(28, 28, 28, 0.8),
-    0px 0px 4px rgba(28, 28, 28, 0.7);
+  color: #ac663e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .banner-content-left p {
@@ -288,7 +299,10 @@ h6 {
   }
 
   .banner-content-left h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: #ac663e;
+    letter-spacing: 0.5px;
   }
 
   .banner-content-left p {
@@ -329,6 +343,9 @@ h6 {
 
   .banner-content-left h2 {
     font-size: 2rem;
+    font-weight: 400;
+    color: #ac663e;
+    letter-spacing: 0.5px;
   }
 
   .banner-content-left p {
@@ -355,7 +372,8 @@ h6 {
   }
 
   .banner-content-left h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 100;
     margin-bottom: 0.5rem;
   }
 
@@ -891,23 +909,23 @@ footer {
   .hero-content-side {
     padding: 2rem 1rem;
   }
-  
+
   /* Dog menu section specific styling */
   .hero-container:nth-of-type(3) .hero-image-side {
     order: -1; /* Make image appear first/above */
   }
-  
+
   /* Fix for hamburger menu in mobile view */
   .navbar {
     position: relative;
     padding-bottom: 0; /* Remove bottom padding from navbar */
   }
-  
+
   /* Ensure the navbar has a solid background */
   .navbar.navbar-dark.bg-dark {
     background-color: #212529 !important;
   }
-  
+
   .navbar-collapse {
     transition: none; /* Remove any transitions that might cause issues */
     background-color: #212529; /* Match the navbar background */
@@ -938,34 +956,34 @@ footer {
     border-top: none; /* Remove any border that might create a gap */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for visual separation */
   }
-  
+
   /* Remove any margin from the first item in dropdown */
   #navbarNav .navbar-nav > .nav-item:first-child {
     margin-top: 0;
   }
-  
+
   /* Fix for navbar container positioning */
   @media (max-width: 991px) {
     .navbar > .container {
       position: static;
     }
   }
-  
+
   /* Ensure navbar items are fully visible */
   .navbar-nav {
     width: 100%;
     padding: 0 15px;
   }
-  
+
   .navbar-nav .nav-item {
     margin: 8px 0;
   }
-  
+
   .navbar-nav .nav-link {
     padding: 8px 15px;
     display: block;
   }
-  
+
   /* Fix container for mobile navbar */
   @media (max-width: 991px) {
     .navbar > .container {
@@ -1018,9 +1036,13 @@ footer {
 
 .featured-content h2 {
   font-size: 2.5rem;
+  font-weight: 400;
   margin-bottom: 1.5rem;
-  color: #ac663e; /* Updated heading color */
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  color: #ac663e;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .featured-content p {
