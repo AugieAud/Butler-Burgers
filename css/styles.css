@@ -12,43 +12,20 @@
   font-family: var(--body-font);
 }
 
-/* Force all headings to use Glacial Indifference font with highest specificity */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-.navbar-brand,
-.display-1,
-.display-2,
-.display-3,
-.display-4,
-.display-5,
-.display-6 {
+/* Global heading styles */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6,
+.card-title, .section-title,
+.menu-section h2, section h2,
+[class*="title"], [class*="heading"] {
+  font-family: "Glacial Indifference", "Montserrat", sans-serif !important;
   font-weight: 400;
   color: #ac663e;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.card-title,
-.menu-section h2,
-section h2,
-.section-title,
-[class*="title"],
-[class*="heading"],
-h2 {
-  font-family: "Glacial Indifference", "Montserrat", sans-serif !important;
-  font-weight: normal;
 }
 
 .navbar-brand {
@@ -73,7 +50,6 @@ h2 {
 /* Specific rule for menu section headings and card titles */
 .menu-section h2,
 .card-title {
-  font-family: "Glacial Indifference", "Montserrat", sans-serif !important;
   font-weight: 700;
 }
 
@@ -82,15 +58,6 @@ body {
   color: var(--secondary-color);
   line-height: 1.6;
   background-color: var(--light-color) !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
 }
 
 /* Universal Button Styles - Override ALL buttons */
@@ -159,15 +126,6 @@ body {
   color: var(--secondary-color);
   line-height: 1.6;
   background-color: var(--light-color) !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
 }
 
 /* Header Styles */
