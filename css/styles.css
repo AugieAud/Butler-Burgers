@@ -311,6 +311,15 @@ h6 {
   .banner-content-left {
     padding: 1.5rem;
     order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 200px;
+    padding-top: 0;
+    margin-top: -40px;
+    position: relative;
+    top: -10px;
   }
 
   .banner-image-right {
@@ -334,6 +343,15 @@ h6 {
 
   .banner-content-left {
     padding: 1rem;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0;
+    margin-top: -50px;
+    position: relative;
+    top: -15px;
   }
 
   .banner-content-left h2 {
