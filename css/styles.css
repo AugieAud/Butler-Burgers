@@ -893,7 +893,7 @@ footer {
   }
   
   /* Dog menu section specific styling */
-  .hero-container:nth-of-type(2) .hero-image-side {
+  .hero-container:nth-of-type(3) .hero-image-side {
     order: -1; /* Make image appear first/above */
   }
   
