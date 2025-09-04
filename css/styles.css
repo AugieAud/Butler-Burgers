@@ -13,12 +13,30 @@
 }
 
 /* Global heading styles */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6,
-.display-1, .display-2, .display-3, .display-4, .display-5, .display-6,
-.card-title, .section-title,
-.menu-section h2, section h2,
-[class*="title"], [class*="heading"] {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6,
+.card-title,
+.section-title,
+.menu-section h2,
+section h2,
+[class*="title"],
+[class*="heading"] {
   font-family: "Glacial Indifference", "Montserrat", sans-serif !important;
   font-weight: 400;
   color: #ac663e;
