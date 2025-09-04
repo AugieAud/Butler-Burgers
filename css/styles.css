@@ -994,6 +994,8 @@ footer {
   .navbar {
     position: relative;
     padding-bottom: 0; /* Remove bottom padding from navbar */
+    margin-bottom: 0; /* Ensure no margin at bottom */
+    border-bottom: 0; /* Ensure no border at bottom */
   }
 
   /* Ensure the navbar has a solid background */
@@ -1018,7 +1020,7 @@ footer {
   #navbarNav.collapse.show {
     display: block !important; /* Force display when shown */
     position: absolute;
-    top: 100%;
+    top: 88px; /* Match the navbar height exactly */
     left: 0;
     right: 0;
     width: 100%;
