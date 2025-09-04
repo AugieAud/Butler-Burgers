@@ -511,8 +511,8 @@ body {
 /* Menu Banner Styles */
 .menu-banner {
   position: relative;
-  height: 250px;
-  background: url("../images/optimized/banners/pattern.webp");
+  height: 350px;
+  background: url("../images/optimized/banners/pattern5.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -521,8 +521,8 @@ body {
 
 .about-banner {
   position: relative;
-  height: 250px;
-  background: url("../images/optimized/banners/pattern2.webp");
+  height: 350px;
+  background: url("../images/optimized/banners/pattern6.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
