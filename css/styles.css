@@ -786,11 +786,92 @@ img[src="images/placeholder.png"]::after {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .close-modal {
+    top: 10px;
+    right: 10px;
+    color: var(--light-color);
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1020;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.7;
+  }
+}
+
 .close-modal:hover,
 .close-modal:focus {
   color: var(--accent-color);
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-color);
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 1010;
+}
+
+.prev-arrow {
+  left: -60px;
+}
+
+.next-arrow {
+  right: -60px;
+}
+
+.nav-arrow:hover {
+  background-color: rgba(
+    172,
+    102,
+    62,
+    0.8
+  ); /* Using primary color with transparency */
+  color: white;
+}
+
+/* Responsive adjustments for navigation arrows */
+@media (max-width: 991px) {
+  .nav-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+  }
+
+  .prev-arrow {
+    left: -45px;
+  }
+
+  .next-arrow {
+    right: -45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-arrow {
+    display: none; /* Hide navigation arrows on mobile */
+  }
 }
 
 /* About Page Styles */
@@ -864,16 +945,16 @@ footer {
   .menu-navigation {
     padding: 0.5rem 0;
   }
-  
+
   .menu-nav-link {
     font-size: 1rem;
     padding: 0.4rem 0.7rem;
   }
-  
+
   .menu-nav-separator {
     padding: 0 0.15rem;
   }
-  
+
   .menu-banner,
   .about-banner {
     height: 180px;
@@ -890,17 +971,17 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .menu-nav-link {
     font-size: 0.9rem;
     padding: 0.25rem 0.5rem;
   }
-  
+
   .menu-nav-separator {
     padding: 0 0.1rem;
     font-size: 0.9rem;
   }
-  
+
   .menu-banner,
   .about-banner {
     height: 150px;
