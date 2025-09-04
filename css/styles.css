@@ -960,6 +960,15 @@ footer {
   color: var(--light-color);
 }
 
+/* Banner text positioning for desktop */
+.banner-text-container {
+  margin-top: -40px;
+}
+
+.banner-text-container p {
+  margin-bottom: 5px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .menu-navigation {
