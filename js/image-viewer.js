@@ -35,6 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get all menu images
   const menuImages = document.querySelectorAll(".card-img-top");
   let currentImageIndex = 0;
+  
+  // Touch swipe variables
+  let touchStartX = 0;
+  let touchEndX = 0;
+  let minSwipeDistance = 50; // Minimum distance required for a swipe
 
   // Function to show image at current index
   function showImage(index) {
@@ -75,6 +80,33 @@ document.addEventListener("DOMContentLoaded", function () {
   nextBtn.addEventListener("click", function () {
     showImage(currentImageIndex + 1);
   });
+
+  // Touch event handlers for swipe functionality
+  modalContent.addEventListener("touchstart", function(event) {
+    touchStartX = event.changedTouches[0].screenX;
+  }, false);
+  
+  modalContent.addEventListener("touchend", function(event) {
+    touchEndX = event.changedTouches[0].screenX;
+    handleSwipe();
+  }, false);
+  
+  // Handle the swipe gesture
+  function handleSwipe() {
+    // Calculate swipe distance
+    const swipeDistance = touchEndX - touchStartX;
+    
+    // Check if swipe distance meets the minimum threshold
+    if (Math.abs(swipeDistance) >= minSwipeDistance) {
+      if (swipeDistance > 0) {
+        // Swipe right - show previous image
+        showImage(currentImageIndex - 1);
+      } else {
+        // Swipe left - show next image
+        showImage(currentImageIndex + 1);
+      }
+    }
+  }
 
   // Keyboard navigation
   document.addEventListener("keydown", function (event) {
