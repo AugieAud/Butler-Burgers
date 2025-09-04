@@ -526,6 +526,57 @@ body {
   box-shadow: 0 8px 20px rgba(28, 28, 28, 0.2); /* Using secondary color with transparency */
 }
 
+/* Menu Navigation Styles */
+.menu-navigation {
+  padding: 1rem 0;
+}
+
+.menu-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu-nav-link {
+  color: #ac663e; /* Same color as headings */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.menu-nav-link:hover {
+  color: #c69500; /* Gold color on hover */
+  text-decoration: none;
+}
+
+.menu-nav-separator {
+  color: #ac663e;
+  opacity: 0.7;
+  padding: 0 0.25rem;
+  font-weight: 300;
+}
+
+/* Back to Top Link Styles */
+.back-to-top {
+  color: #ac663e;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.back-to-top:hover {
+  color: #c69500;
+  text-decoration: none;
+}
+
 /* Menu Banner Styles */
 .menu-banner {
   position: relative;
@@ -810,6 +861,19 @@ footer {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .menu-navigation {
+    padding: 0.5rem 0;
+  }
+  
+  .menu-nav-link {
+    font-size: 1rem;
+    padding: 0.4rem 0.7rem;
+  }
+  
+  .menu-nav-separator {
+    padding: 0 0.15rem;
+  }
+  
   .menu-banner,
   .about-banner {
     height: 180px;
@@ -822,6 +886,21 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .menu-nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .menu-nav-link {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .menu-nav-separator {
+    padding: 0 0.1rem;
+    font-size: 0.9rem;
+  }
+  
   .menu-banner,
   .about-banner {
     height: 150px;
