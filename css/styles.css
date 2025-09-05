@@ -306,20 +306,21 @@ body {
 }
 
 /* iPad Air specific fixes */
-@media (width: 820px) and (height: 1180px), (min-width: 810px) and (max-width: 834px) {
+@media (width: 820px) and (height: 1180px),
+  (min-width: 810px) and (max-width: 834px) {
   .banner-logo {
     width: 450px !important;
     margin-bottom: 0 !important;
   }
-  
+
   .banner-logo-container {
     padding-top: 30px !important;
   }
-  
+
   .banner-text-container {
     margin-top: -35px !important;
   }
-  
+
   .banner-text-container p {
     margin-bottom: 5px !important;
   }
