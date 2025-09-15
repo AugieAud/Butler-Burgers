@@ -50,7 +50,7 @@ const drinks = {
       price: "$6.75",
       image: "images/optimized/drinks/blendedVanilla.jpg",
       description:
-        "Smooth vanilla syrup blended with milk and ice, topped with whipped cream.",
+        "A frosty blend of rich vanilla and latte flavours, whipped into a creamy, refreshing treat.",
     },
   ],
   Lemonades: [
