@@ -32,17 +32,19 @@ document.addEventListener("DOMContentLoaded", function () {
   modal.appendChild(modalContent);
   document.body.appendChild(modal);
 
-  // Get all menu images
-  const menuImages = document.querySelectorAll(".card-img-top");
-  let currentImageIndex = 0;
-  
   // Touch swipe variables
   let touchStartX = 0;
   let touchEndX = 0;
   let minSwipeDistance = 50; // Minimum distance required for a swipe
+  let currentImageIndex = 0;
 
   // Function to show image at current index
   function showImage(index) {
+    // Get all menu images (including dynamically added ones)
+    const menuImages = document.querySelectorAll(".card-img-top");
+    
+    if (menuImages.length === 0) return;
+    
     if (index < 0) index = menuImages.length - 1;
     if (index >= menuImages.length) index = 0;
 
@@ -61,15 +63,31 @@ document.addEventListener("DOMContentLoaded", function () {
     modalImg.setAttribute("data-title", cardTitle);
   }
 
-  // Add click event to each image
-  menuImages.forEach((img, index) => {
-    img.style.cursor = "pointer";
-    img.addEventListener("click", function () {
-      currentImageIndex = index;
-      modal.style.display = "block";
-      showImage(currentImageIndex);
+  // Function to initialize click events for all images
+  function initializeImageViewer() {
+    // Get all menu images (including dynamically added ones)
+    const menuImages = document.querySelectorAll(".card-img-top");
+    
+    // Add click event to each image
+    menuImages.forEach((img, index) => {
+      // Only add event listener if it doesn't already have one
+      if (!img.hasAttribute('data-viewer-initialized')) {
+        img.style.cursor = "pointer";
+        img.setAttribute('data-viewer-initialized', 'true');
+        img.addEventListener("click", function () {
+          // Get fresh index in case DOM has changed
+          const currentImages = document.querySelectorAll(".card-img-top");
+          const currentIndex = Array.from(currentImages).indexOf(this);
+          
+          modal.style.display = "block";
+          showImage(currentIndex);
+        });
+      }
     });
-  });
+  }
+
+  // Initialize image viewer
+  initializeImageViewer();
 
   // Previous button click event
   prevBtn.addEventListener("click", function () {
@@ -132,4 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.display = "none";
     }
   });
+  
+  // Make the initializeImageViewer function globally accessible
+  window.initializeImageViewer = initializeImageViewer;
 });

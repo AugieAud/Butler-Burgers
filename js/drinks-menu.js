@@ -142,10 +142,10 @@ function renderDrinks(category) {
 
 // Function to initialize image viewer for drink cards
 function initializeDrinkImageViewer() {
-  // We don't need to add any specific functionality here
-  // The image-viewer.js script automatically adds click events to all .card-img-top elements
-  // by selecting document.querySelectorAll(".card-img-top")
-  // Our newly added drink images will be picked up on the next DOM mutation or when the page is refreshed
+  // Use the globally accessible initializeImageViewer function if available
+  if (typeof window.initializeImageViewer === 'function') {
+    window.initializeImageViewer();
+  }
 }
 
 // Initialize the tabs and event listeners when the DOM is loaded
