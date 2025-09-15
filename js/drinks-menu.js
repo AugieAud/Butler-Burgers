@@ -25,10 +25,11 @@ const drinks = {
   ],
   Smoothies: [
     {
-      name: "STRAWBERRY SMOOTHIE",
+      name: "STRAWBERRY BANANA SMOOTHIE",
       price: "$5.99",
       image: "images/optimized/drinks/strawberrySmoothie.jpg",
-      description: "Fresh strawberries blended with yogurt and ice.",
+      description:
+        "Fresh strawberries and bananas blended with yogurt and ice.",
     },
     {
       name: "MANGO MANGO SMOOTHIE",
