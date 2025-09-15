@@ -6,21 +6,21 @@ const drinks = {
       price: "$6.99",
       image: "images/optimized/drinks/chocolateShake.jpg",
       description:
-        "Rich chocolate ice cream blended to perfection, topped with whipped cream and chocolate drizzle.",
+        "Rich Vanilla ice cream, chocolate syrup, touch of milk blended to perfection, topped with real whipped cream and chocolate drizzle",
     },
     {
       name: "VANILLA MILKSHAKE",
       price: "$6.99",
-      image: "images/optimized/drinks/vanillaMilkshake.jpg",
+      image: "images/optimized/drinks/vanillaMilkshake.png",
       description:
-        "Creamy vanilla ice cream blended to smooth perfection, topped with whipped cream and a cherry on top.",
+        "Rich vanilla ice cream and a touch of milk blended to smooth perfection, topped with real whipped cream. Finish it your way, with or without a cherry on top",
     },
     {
       name: "OREO MILKSHAKE",
       price: "$6.99",
       image: "images/optimized/drinks/oreoMilkshake.jpg",
       description:
-        "Vanilla ice cream blended with Oreo cookies, topped with whipped cream and cookie crumbles.",
+        "Rich vanilla ice cream, blended with Oreo cookies and a touch of milk, topped with real whipped cream and cookie crumbles",
     },
   ],
   Smoothies: [
@@ -40,14 +40,14 @@ const drinks = {
   "Blended Drinks": [
     {
       name: "BLENDED FROZEN MOCHA",
-      price: "$5.99",
+      price: "$6.75",
       image: "images/optimized/drinks/blendedMocha.jpg",
       description:
         "Rich espresso blended with chocolate, milk, and ice. Topped with whipped cream and chocolate drizzle.",
     },
     {
       name: "BLENDED ICED VANILLA",
-      price: "$5.99",
+      price: "$6.75",
       image: "images/optimized/drinks/blendedVanilla.jpg",
       description:
         "Smooth vanilla syrup blended with milk and ice, topped with whipped cream.",
@@ -56,53 +56,56 @@ const drinks = {
   Lemonades: [
     {
       name: "CLASSIC LEMONADE",
-      price: "$3.99",
+      price: "$5.20",
       image: "images/optimized/drinks/lemonade.jpg",
       description: "Freshly squeezed lemonade made with real lemons.",
     },
     {
-      name: "STRAWBERRY LEMONADE",
-      price: "$4.99",
-      image: "images/optimized/drinks/strawberryLemonade.jpg",
-      description:
-        "Freshly squeezed lemonade infused with sweet strawberry puree.",
-    },
-    {
-      name: "LAVENDER LEMONADE",
-      price: "$4.99",
-      image: "images/optimized/drinks/lavenderSoda.jpg",
-      description: "Freshly squeezed lemonade infused with lavender syrup.",
+      name: "PEACH LEMONADE",
+      price: "$5.50",
+      image: "images/optimized/drinks/peachLemonade.jpg",
+      description: "Freshly squeezed lemonade infused with Torani Peach syrup.",
     },
     {
       name: "CHERRY LEMONADE",
-      price: "$4.99",
+      price: "$5.50",
       image: "images/optimized/drinks/cherryLemonade.jpg",
-      description: "Freshly squeezed lemonade infused with tart cherry puree.",
+      description:
+        "Freshly squeezed lemonade infused with Torani Cherry syrup.",
     },
     {
-      name: "PEACH LEMONADE",
-      price: "$5.99",
-      image: "images/optimized/drinks/peachLemonade.jpg",
-      description: "Freshly squeezed lemonade infused with sweet peach puree.",
+      name: "STRAWBERRY LEMONADE",
+      price: "$5.50",
+      image: "images/optimized/drinks/strawberryLemonade.jpg",
+      description:
+        "Freshly squeezed lemonade infused with Torani Strawberry syrup.",
+    },
+    {
+      name: "LAVENDER LEMONADE",
+      price: "$5.50",
+      image: "images/optimized/drinks/lavenderSoda.jpg",
+      description:
+        "Freshly squeezed lemonade infused with Torani Lavender syrup.",
     },
     {
       name: "RASPBERRY LEMONADE",
-      price: "$4.99",
+      price: "$5.50",
       image: "images/optimized/drinks/raspberryLemonade.jpg",
-      description: "Freshly squeezed lemonade infused with raspberry puree.",
+      description:
+        "Freshly squeezed lemonade infused with Torani Raspberry syrup.",
     },
   ],
   Sodas: [
     {
       name: "FOUNTAIN SODAS",
-      price: "$2.99",
+      price: "$5.20",
       image: "images/optimized/drinks/pepsiEtc.jpg",
       description:
         "Your choice of Dr. Pepper, Pepsi, Diet Pepsi, or Mug Root Beer served ice cold.",
     },
     {
       name: "STARRY SODA",
-      price: "$2.99",
+      price: "$5.20",
       image: "images/optimized/drinks/starryLemonade.jpg",
       description: "Crisp and refreshing lemon lime soda served over ice.",
     },
@@ -110,10 +113,10 @@ const drinks = {
   "Iced Tea": [
     {
       name: "FRESH BREWED ICED TEA",
-      price: "$2.99",
+      price: "$5.20",
       image: "images/optimized/drinks/icedTeajpg.jpg",
       description:
-        "Freshly brewed and chilled black tea served over ice with lemon.",
+        "Freshly brewed and chilled black tea served over ice with lemon. Add any Torani flavor: Peach, Cherry, Strawberry, Lavender, or Raspberry for 30c extra.",
     },
   ],
 };
