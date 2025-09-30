@@ -14,13 +14,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <style>
-      /* Drink tabs styling - using existing menu-nav-link styles */
-      .drink-tab.active {
-        font-weight: bold;
-        color: #c69500 !important; /* Gold color for active tab */
-      }
-    </style>
   </head>
   <body id="top">
     <!-- Header -->
@@ -572,57 +565,258 @@
       <!-- Drinks Section -->
       <section id="drinks" class="menu-section mt-5">
         <h2 class="text-center mb-5">THE BUTLER'S BEVERAGES</h2>
-
-        <!-- Drink Category Tabs -->
-        <div class="menu-navigation text-center mb-4">
-          <div class="menu-nav-links" id="drinkTabs">
-            <a
-              href="javascript:void(0);"
-              class="menu-nav-link drink-tab active"
-              data-category="Milkshakes"
-              >Milkshakes</a
-            >
-            <span class="menu-nav-separator">|</span>
-            <a
-              href="javascript:void(0);"
-              class="menu-nav-link drink-tab"
-              data-category="Smoothies"
-              >Smoothies</a
-            >
-            <span class="menu-nav-separator">|</span>
-            <a
-              href="javascript:void(0);"
-              class="menu-nav-link drink-tab"
-              data-category="Blended Drinks"
-              >Blended Drinks</a
-            >
-            <span class="menu-nav-separator">|</span>
-            <a
-              href="javascript:void(0);"
-              class="menu-nav-link drink-tab"
-              data-category="Lemonades"
-              >Lemonades</a
-            >
-            <span class="menu-nav-separator">|</span>
-            <a
-              href="javascript:void(0);"
-              class="menu-nav-link drink-tab"
-              data-category="Sodas"
-              >Sodas</a
-            >
-            <span class="menu-nav-separator">|</span>
-            <a
-              href="javascript:void(0);"
-              class="menu-nav-link drink-tab"
-              data-category="Iced Tea"
-              >Iced Tea</a
-            >
+        <div class="row">
+          <!-- Oreo Milkshake -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/optimized/drinks/oreoMilkshake.jpg"
+                  class="card-img-top"
+                  alt="OREO MILKSHAKE"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">OREO MILKSHAKE</h5>
+                <p class="card-text">
+                  Rich vanilla ice cream, blended with Oreo cookies and a touch of milk, topped with real whipped cream and cookie crumbles
+                </p>
+                <p class="price">$6.99</p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <!-- Drink Grid - Will be populated by JavaScript -->
-        <div class="row" id="drinkGrid">
-          <!-- Drink cards will be dynamically inserted here by JavaScript -->
+          <!-- Chocolate Milkshake -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/optimized/drinks/chocolateShake.jpg"
+                  class="card-img-top"
+                  alt="CHOCOLATE MILKSHAKE"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CHOCOLATE MILKSHAKE</h5>
+                <p class="card-text">
+                  Rich Vanilla ice cream, chocolate syrup, touch of milk blended to perfection, topped with real whipped cream and chocolate drizzle
+                </p>
+                <p class="price">$6.99</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vanilla Milkshake -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/optimized/drinks/vanillaMilkshake.png"
+                  class="card-img-top"
+                  alt="VANILLA MILKSHAKE"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">VANILLA MILKSHAKE</h5>
+                <p class="card-text">
+                  Rich vanilla ice cream and a touch of milk blended to smooth perfection, topped with real whipped cream. Finish it your way, with or without a cherry on top
+                </p>
+                <p class="price">$6.99</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mango-Mango Smoothie -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/optimized/drinks/mangoSmoothie.jpg"
+                  class="card-img-top"
+                  alt="MANGO MANGO SMOOTHIE"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">MANGO MANGO SMOOTHIE</h5>
+                <p class="card-text">Fresh mango blended with yogurt and ice.</p>
+                <p class="price">$5.99</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strawberry Banana Smoothie -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/optimized/drinks/strawberrySmoothie.jpg"
+                  class="card-img-top"
+                  alt="STRAWBERRY BANANA SMOOTHIE"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">STRAWBERRY BANANA SMOOTHIE</h5>
+                <p class="card-text">Fresh strawberries and bananas blended with yogurt and ice.</p>
+                <p class="price">$5.99</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blended Ice Coffee Mocha -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/optimized/drinks/blendedMocha.jpg"
+                  class="card-img-top"
+                  alt="BLENDED ICE COFFEE MOCHA"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">BLENDED ICE COFFEE MOCHA</h5>
+                <p class="card-text">Rich espresso blended with chocolate, milk, and ice. Topped with whipped cream and chocolate drizzle.</p>
+                <p class="price">$6.75</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blended Vanilla Latte -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img
+                  src="images/optimized/drinks/blendedVanilla.jpg"
+                  class="card-img-top"
+                  alt="BLENDED VANILLA LATTE"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">BLENDED VANILLA LATTE</h5>
+                <p class="card-text">A frosty blend of rich vanilla and latte flavours, whipped into a creamy, refreshing treat.</p>
+                <p class="price">$6.75</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lemonades -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/lemonade.jpg" class="card-img-top" alt="CLASSIC LEMONADE" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CLASSIC LEMONADE</h5>
+                <p class="card-text">Freshly squeezed lemonade made with real lemons.</p>
+                <p class="price">$5.20</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/peachLemonade.jpg" class="card-img-top" alt="PEACH LEMONADE" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">PEACH LEMONADE</h5>
+                <p class="card-text">Freshly squeezed lemonade infused with Torani Peach syrup.</p>
+                <p class="price">$5.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/cherryLemonade.jpg" class="card-img-top" alt="CHERRY LEMONADE" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">CHERRY LEMONADE</h5>
+                <p class="card-text">Freshly squeezed lemonade infused with Torani Cherry syrup.</p>
+                <p class="price">$5.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/strawberryLemonade.jpg" class="card-img-top" alt="STRAWBERRY LEMONADE" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">STRAWBERRY LEMONADE</h5>
+                <p class="card-text">Freshly squeezed lemonade infused with Torani Strawberry syrup.</p>
+                <p class="price">$5.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/lavenderSoda.jpg" class="card-img-top" alt="LAVENDER LEMONADE" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">LAVENDER LEMONADE</h5>
+                <p class="card-text">Freshly squeezed lemonade infused with Torani Lavender syrup.</p>
+                <p class="price">$5.50</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/raspberryLemonade.jpg" class="card-img-top" alt="RASPBERRY LEMONADE" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">RASPBERRY LEMONADE</h5>
+                <p class="card-text">Freshly squeezed lemonade infused with Torani Raspberry syrup.</p>
+                <p class="price">$5.50</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Iced Tea -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/icedTeajpg.jpg" class="card-img-top" alt="FRESH BREWED ICED TEA" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">FRESH BREWED ICED TEA</h5>
+                <p class="card-text">Freshly brewed and chilled black tea served over ice with lemon. Add any Torani flavor: Peach, Cherry, Strawberry, Lavender, or Raspberry for 30c extra.</p>
+                <p class="price">$5.20</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sodas (bottom) -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/pepsiEtc.jpg" class="card-img-top" alt="FOUNTAIN SODAS" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">FOUNTAIN SODAS</h5>
+                <p class="card-text">Your choice of Dr. Pepper, Pepsi, Diet Pepsi, or Mug Root Beer served ice cold.</p>
+                <p class="price">$5.20</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-img-wrapper">
+                <img src="images/optimized/drinks/starryLemonade.jpg" class="card-img-top" alt="STARRY SODA" />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">STARRY SODA</h5>
+                <p class="card-text">Crisp and refreshing lemon lime soda served over ice.</p>
+                <p class="price">$5.20</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <div class="text-center mb-4">
@@ -799,6 +993,5 @@
     <script src="js/script.js"></script>
     <script src="js/image-viewer.js"></script>
     <script src="js/placeholder-handler.js"></script>
-    <script src="js/drinks-menu.js"></script>
   </body>
 </html>
