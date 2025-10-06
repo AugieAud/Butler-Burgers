@@ -55,22 +55,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add animation to cards on scroll
-    const animateOnScroll = () => {
-        const cards = document.querySelectorAll('.card');
-        cards.forEach(card => {
-            const cardPosition = card.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.3;
-            
-            if (cardPosition < screenPosition) {
-                card.classList.add('animate__animated', 'animate__fadeInUp');
-            }
-        });
-    };
-
-    // Call animation function on scroll
-    window.addEventListener('scroll', animateOnScroll);
-    
-    // Call it once on load to check for elements already in view
-    animateOnScroll();
 });

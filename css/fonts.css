@@ -1,21 +1,5 @@
 /* Custom Font Declarations */
 @font-face {
-  font-family: "Aurelig";
-  src: url("../fonts/Aurelig Demo.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "QuentinCaps";
-  src: url("../fonts/QuentinCaps.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Glacial Indifference";
   src: url("../fonts/glacial-indifference.regular.otf") format("opentype");
   font-weight: normal;

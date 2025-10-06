@@ -47,7 +47,7 @@ section h2,
 }
 
 .navbar-brand {
-  font-family: "Aurelig Demo", "Glacial Indifference", "Montserrat", sans-serif !important;
+  font-family: "Glacial Indifference", "Montserrat", sans-serif !important;
   font-size: 1.8rem;
   color: var(--light-color) !important;
   display: flex;
@@ -69,13 +69,6 @@ section h2,
 .menu-section h2,
 .card-title {
   font-weight: 700;
-}
-
-body {
-  font-family: "Glacial Indifference", sans-serif;
-  color: var(--secondary-color);
-  line-height: 1.6;
-  background-color: var(--light-color) !important;
 }
 
 /* Universal Button Styles - Override ALL buttons */
@@ -141,9 +134,11 @@ a[role="button"]:hover,
 }
 
 body {
+  font-family: "Glacial Indifference", sans-serif;
   color: var(--secondary-color);
   line-height: 1.6;
   background-color: var(--light-color) !important;
+  overflow-x: hidden;
 }
 
 /* Header Styles */
@@ -154,12 +149,6 @@ body {
   height: 140px;
 }
 
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.7rem;
-  display: flex;
-  align-items: center;
-}
 
 .navbar-brand .navbar-logo-main {
   height: 120px !important; /* Force override any inline styles */
@@ -173,13 +162,6 @@ body {
   margin-right: 0px;
 }
 
-/* Specific styling for the bbLogoCream logo */
-.navbar-brand img[src*="bbLogoCream"] {
-  height: 130px !important; /* Make the text logo significantly larger */
-  width: auto;
-  transform: translateY(5px); /* Adjust vertical position to center in navbar */
-  margin-left: -10px; /* Move closer to the logo */
-}
 
 .navbar-dark .navbar-nav .nav-link {
   color: var(--light-color);
@@ -217,7 +199,8 @@ body {
 /* Carousel Styles */
 .carousel {
   margin-top: 0;
-  background-color: transparent; /* Remove black background */
+  margin-bottom: 0;
+  background-color: transparent;
   position: relative;
 }
 
@@ -432,8 +415,6 @@ body {
   height: 100%;
   cursor: pointer;
   pointer-events: auto;
-  transition: backdrop-filter 0.3s ease, background-color 0.3s ease,
-    opacity 0.3s ease, transform 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -456,7 +437,7 @@ body {
   border-top: 3px solid var(--light-color);
   border-left: 3px solid var(--light-color);
   opacity: 0.8;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .carousel-nav-left::before {
@@ -474,12 +455,6 @@ body {
   opacity: 1;
 }
 
-.carousel-nav-right:hover::before {
-  transform: rotate(135deg);
-}
-
-/* No background hover effect for carousel navigation */
-
 /* Hide carousel navigation arrows on mobile */
 @media (max-width: 767px) {
   .carousel-nav-left,
@@ -496,10 +471,6 @@ body {
   /* Removed specific positioning to avoid conflicts */
 }
 
-/* Carousel container styles */
-#carouselExampleIndicators.bg-dark {
-  background-color: var(--secondary-color) !important;
-}
 
 .carousel-inner {
   background-color: transparent;
@@ -530,27 +501,6 @@ body {
 .carousel-item-next.carousel-item-start,
 .carousel-item-prev.carousel-item-end {
   transform: translateX(0);
-}
-
-.carousel-caption {
-  background-color: rgba(
-    28,
-    28,
-    28,
-    0.5
-  ); /* Using secondary color with transparency */
-  padding: 20px;
-  border-radius: 5px;
-}
-
-/* This duplicate style was removed to prevent conflicts */
-
-/* Hero Section Styles */
-.hero-section img {
-  max-width: 120%;
-  margin-left: -10%;
-  border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(28, 28, 28, 0.2); /* Using secondary color with transparency */
 }
 
 /* Menu Navigation Styles */
@@ -632,23 +582,12 @@ body {
   object-fit: cover;
 }
 
-.banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 /* Banner title styling */
 .banner-overlay h1,
 .banner-overlay h1.display-4,
 .menu-banner .banner-overlay h1,
 .about-banner .banner-overlay h1 {
-  color: #ebbd98; /* Light peach/tan color */
+  color: #ebbd98;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-weight: normal !important;
   letter-spacing: 1px;
@@ -660,36 +599,15 @@ body {
   font-size: 1.2em;
 }
 
-/* Menu banner overlay with dark background */
-.menu-banner .banner-overlay {
+/* Banner overlay styles */
+.menu-banner .banner-overlay,
+.about-banner .banner-overlay,
+.banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    28,
-    28,
-    28,
-    0.5
-  ); /* Using secondary color with transparency */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-banner .banner-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(
-    28,
-    28,
-    28,
-    0.5
-  ); /* Using secondary color with transparency */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -711,11 +629,6 @@ body {
   box-shadow: 0 10px 20px rgba(28, 28, 28, 0.15);
 }
 
-/* Image click effect */
-.card {
-  position: relative;
-}
-
 .card-img-top {
   width: 100%;
   aspect-ratio: 1/1;
@@ -724,31 +637,6 @@ body {
   object-position: center;
   background-color: var(--light-color);
   cursor: pointer;
-}
-
-/* Placeholder image styling */
-img[src="images/placeholder.png"] {
-  background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-img[src="images/placeholder.png"]::after {
-  content: "Image Coming Soon";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #666;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: center;
 }
 
 /* Add a wrapper for the image to maintain consistent sizing */
@@ -907,35 +795,6 @@ img[src="images/placeholder.png"]::after {
   margin-bottom: 1.5rem;
 }
 
-.testimonials-section .card {
-  padding: 1.5rem;
-}
-
-.text-warning {
-  color: var(--accent-color) !important;
-}
-
-.stars {
-  font-size: 1.2rem;
-}
-
-.customer-name {
-  font-style: italic;
-  font-weight: 500;
-  margin-top: 1rem;
-}
-
-.map-container {
-  height: 300px;
-  overflow: hidden;
-}
-
-.map-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 /* Special Offer Cards - No Hover Effect */
 .special-offer.card:hover {
   transform: none;
@@ -948,24 +807,6 @@ footer {
   color: var(--light-color);
 }
 
-.social-icons a {
-  display: inline-block;
-  width: 36px;
-  height: 36px;
-  background-color: var(--light-color);
-  opacity: 0.1;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 36px;
-  margin-right: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-  color: var(--light-color);
-}
-
-.social-icons a:hover {
-  background-color: var(--primary-color);
-  color: var(--light-color);
-}
 
 /* Banner text positioning for desktop */
 .banner-text-container {
@@ -1156,13 +997,6 @@ footer {
     margin-top: 0;
   }
 
-  /* Fix for navbar container positioning */
-  @media (max-width: 991px) {
-    .navbar > .container {
-      position: static;
-    }
-  }
-
   /* Ensure navbar items are fully visible */
   .navbar-nav {
     width: 100%;
@@ -1176,13 +1010,6 @@ footer {
   .navbar-nav .nav-link {
     padding: 8px 15px;
     display: block;
-  }
-
-  /* Fix container for mobile navbar */
-  @media (max-width: 991px) {
-    .navbar > .container {
-      position: relative;
-    }
   }
 
   .featured-section {
@@ -1251,36 +1078,10 @@ footer {
   margin-top: 1rem;
 }
 
-/* Remove any potential Bootstrap container padding */
-body {
-  overflow-x: hidden;
-}
-
-/* Ensure no space between carousel and hero section */
-#carouselExampleIndicators {
-  margin-bottom: 0;
-}
-
 /* Additional hero section fixes */
 .hero-image-side {
   position: relative;
   left: 0;
-}
-
-.hero-text-col {
-  padding-left: 2rem;
-  width: 60%;
-}
-
-/* Additional button spacing classes if needed */
-.btn-lg {
-  padding: 0.75rem 2rem;
-  font-size: 1.2rem;
-}
-
-.btn-sm {
-  padding: 0.25rem 1rem;
-  font-size: 0.9rem;
 }
 
 /* Button focus state */
