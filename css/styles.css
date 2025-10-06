@@ -607,8 +607,8 @@ body {
 /* Menu Banner Styles */
 .menu-banner {
   position: relative;
-  height: 350px;
-  background: url("../images/optimized/banners/pattern5.webp");
+  height: 500px;
+  background: url("../images/optimized/banners/pattern7.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -617,8 +617,8 @@ body {
 
 .about-banner {
   position: relative;
-  height: 350px;
-  background: url("../images/optimized/banners/pattern6.webp");
+  height: 500px;
+  background: url("../images/optimized/banners/pattern8.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
