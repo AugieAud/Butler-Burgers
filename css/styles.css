@@ -1058,6 +1058,25 @@ footer {
     border-bottom: 0; /* Ensure no border at bottom */
   }
 
+  /* Make navbar logos responsive for mobile */
+  .navbar-logo-main {
+    height: 100px !important;
+    width: auto;
+  }
+
+  .navbar-brand .navbar-logo-main {
+    height: 100px !important;
+  }
+
+  .navbar-logo {
+    height: 110px !important;
+    width: auto;
+  }
+
+  .navbar-brand .navbar-logo {
+    height: 110px !important;
+  }
+
   /* Ensure the navbar has a solid background */
   .navbar.navbar-dark.bg-dark {
     background-color: #212529 !important;
@@ -1080,17 +1099,16 @@ footer {
   #navbarNav.collapse.show {
     display: block !important; /* Force display when shown */
     position: absolute;
-    top: 140px; /* Match the navbar height exactly */
+    top: 100%; /* Position directly below the navbar */
     left: 0;
     right: 0;
     width: 100%;
     background-color: #212529; /* Match the navbar background */
     z-index: 1000;
     padding: 10px 0;
-    max-height: calc(100vh - 140px); /* Prevent overflow beyond viewport */
+    max-height: calc(100vh - 110px); /* Prevent overflow beyond viewport */
     overflow-y: auto; /* Allow scrolling if menu is too tall */
-    margin-top: -2px; /* Create overlap to prevent gap */
-    border-top: none; /* Remove any border that might create a gap */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for visual separation */
   }
 
