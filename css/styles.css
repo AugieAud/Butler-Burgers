@@ -848,6 +848,26 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.about-section img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .about-section img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section img {
+    max-width: 200px;
+  }
+}
+
 /* Special Offer Cards - No Hover Effect */
 .special-offer.card:hover {
   transform: none;
