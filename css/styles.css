@@ -858,13 +858,15 @@ body {
 
 @media (max-width: 768px) {
   .about-section img {
-    max-width: 250px;
+    max-width: 180px;
+    margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .about-section img {
-    max-width: 200px;
+    max-width: 150px;
+    margin-bottom: 1.5rem;
   }
 }
 
