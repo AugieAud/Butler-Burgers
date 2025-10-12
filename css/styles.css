@@ -849,7 +849,7 @@ body {
 }
 
 .about-section img {
-  max-width: 300px;
+  max-width: 350px;
   width: 100%;
   height: auto;
   display: block;
@@ -858,14 +858,14 @@ body {
 
 @media (max-width: 768px) {
   .about-section img {
-    max-width: 140px;
+    max-width: 180px;
     margin-bottom: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .about-section img {
-    max-width: 120px;
+    max-width: 150px;
     margin-bottom: 1.5rem;
   }
 }
