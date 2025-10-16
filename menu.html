@@ -919,14 +919,34 @@
         
         <!-- Dog Banner -->
         <div class="dog-banner" style="height: clamp(150px, 30vw, 200px);">
-          <div class="banner-overlay d-flex align-items-center justify-content-center">
-            <div class="dog-banner-content" style="width: 100%; max-width: 100%; flex: 1; padding: 0 clamp(20px, 4vw, 40px);">
-              <p class="text-white text-center" style="font-size: clamp(1rem, 2vw, 1.9rem); line-height: 1.5; margin: 0;">
+          <div class="banner-overlay d-flex align-items-center justify-content-center w-100">
+            <div class="w-100" style="padding: 0 20px;">
+              <p class="text-white text-center" style="font-size: clamp(0.8rem, 1.8vw, 1.8rem); line-height: 1.4; margin: 0; padding: 0 20px; max-width: 100%;">
                 We all live a little better everyday knowing our best buddy and favorite alarm clock, hiking companion, face licker, ball catcher, sweet, stubborn, beautiful couch hog, and forever devoted fur baby family members are spoiled EVERY DAY!
               </p>
             </div>
           </div>
         </div>
+        <style>
+          @media (max-width: 1200px) {
+            .dog-banner p {
+              padding: 0 40px !important;
+            }
+          }
+          @media (max-width: 768px) {
+            .dog-banner p {
+              padding: 0 20px !important;
+              font-size: clamp(0.8rem, 1.2vw, 1.2rem) !important;
+            }
+          }
+          @media (max-width: 576px) {
+            .dog-banner p {
+              padding: 0 15px !important;
+              font-size: 0.8rem !important;
+              line-height: 1.3 !important;
+            }
+          }
+        </style>
         <div class="row">
           <div class="col-md-4 mb-4">
             <div class="card h-100">
