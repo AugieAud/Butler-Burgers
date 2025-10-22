@@ -206,7 +206,7 @@ body {
 
 /* Banner Template Styles */
 .banner-template {
-  background: url("../images/optimized/banners/bannerTemplate.webp");
+  background: url("../images/optimized/banners/mainBanner.webp");
   background-size: cover;
   background-position: center;
   display: flex;
