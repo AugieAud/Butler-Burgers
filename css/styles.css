@@ -97,12 +97,25 @@ a[role="button"],
 .btn-outline-danger,
 .btn-outline-light,
 .btn-outline-dark {
-  background-color: #e1ad01 !important;
+  background-color: #e1ad01 !important; /* Default button color */
   border: none !important;
   color: var(--dark-color) !important;
   transition: all 0.3s ease !important;
 }
 
+/* Order now button - lighter version */
+.btn-order-now {
+  background-color: #f5d36d !important; /* Lighter shade */
+  color: var(--dark-color) !important;
+}
+
+/* View menu button - darker version */
+.btn-view-menu {
+  background-color: #c69500 !important; /* Darker shade */
+  color: var(--dark-color) !important;
+}
+
+/* Hover states */
 .btn:hover,
 button:hover,
 .button:hover,
@@ -131,6 +144,18 @@ a[role="button"]:hover,
   background-color: #c69500 !important;
   color: var(--dark-color) !important;
   border: none !important;
+}
+
+/* Specific hover for order now button */
+.btn-order-now:hover {
+  background-color: #e1ad01 !important; /* Slightly darker on hover */
+  color: var(--dark-color) !important;
+}
+
+/* Specific hover for view menu button */
+.btn-view-menu:hover {
+  background-color: #a87d00 !important; /* Even darker on hover */
+  color: var(--light-color) !important;
 }
 
 body {
