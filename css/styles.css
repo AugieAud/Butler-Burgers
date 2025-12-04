@@ -107,6 +107,12 @@ a[role="button"],
 .btn-order-now {
   background-color: #f5d36d !important; /* Lighter shade */
   color: var(--dark-color) !important;
+  padding: 0.75rem 2rem !important;
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  border-radius: 30px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 /* View menu button - darker version */
