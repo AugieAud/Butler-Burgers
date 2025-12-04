@@ -115,10 +115,12 @@ a[role="button"],
   letter-spacing: 0.5px;
 }
 
-/* View menu button - darker version */
+/* View menu button - matches primary color */
 .btn-view-menu {
-  background-color: #c69500 !important; /* Darker shade */
-  color: var(--dark-color) !important;
+  background-color: var(--primary-color) !important;
+  color: var(--light-color) !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
 }
 
 /* Hover states */
@@ -156,12 +158,18 @@ a[role="button"]:hover,
 .btn-order-now:hover {
   background-color: #e1ad01 !important; /* Slightly darker on hover */
   color: var(--dark-color) !important;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Specific hover for view menu button */
 .btn-view-menu:hover {
-  background-color: #a87d00 !important; /* Even darker on hover */
+  background-color: #600018 !important; /* Slightly darker burgundy on hover */
   color: var(--light-color) !important;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
 }
 
 body {
